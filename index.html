@@ -103,9 +103,49 @@
             <div class="preview-panel">
                 <div class="preview-header">
                     <div class="preview-title" data-i18n="previewTitle">Предпросмотр</div>
+                    <div class="preview-controls">
+                        <button class="fullscreen-btn" id="fullscreen-btn" title="Полноэкранный режим">⛶</button>
+                        <label class="graphic-mode-toggle">
+                            <input type="checkbox" id="graphic-mode">
+                            <span data-i18n="graphicMode">Графический режим</span>
+                        </label>
+                    </div>
                 </div>
-                <iframe class="preview-area" id="preview"></iframe>
+                <div class="preview-wrapper">
+                    <iframe class="preview-area" id="preview"></iframe>
+                    <div class="graphic-overlay" id="graphic-overlay"></div>
+                </div>
             </div>
+        </div>
+
+        <!-- Цветовая палитра -->
+        <div class="color-palette" id="color-palette">
+            <div class="color-palette-header">
+                <h4 data-i18n="colorPalette">Палитра цветов</h4>
+                <button class="color-palette-toggle" id="color-palette-toggle">−</button>
+            </div>
+            <div class="color-palette-content">
+                <div class="color-grid" id="color-grid">
+                    <!-- Цвета будут добавлены через JavaScript -->
+                </div>
+                <input type="color" id="custom-color" class="custom-color">
+                <div class="color-input-group">
+                    <input type="text" id="color-input" placeholder="#FFFFFF" class="color-input">
+                    <button id="apply-color" data-i18n="applyColor">Применить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Загрузка файлов -->
+        <div class="file-upload-section">
+            <h3 class="upload-title" data-i18n="uploadTitle">Загрузка файлов</h3>
+            <div class="upload-buttons">
+                <button class="upload-btn" id="upload-image" data-i18n="uploadImage">Загрузить изображение</button>
+                <button class="upload-btn" id="upload-audio" data-i18n="uploadAudio">Загрузить аудио</button>
+                <button class="upload-btn" id="upload-video" data-i18n="uploadVideo">Загрузить видео</button>
+            </div>
+            <input type="file" id="file-upload" class="file-upload-input" accept=".png,.jpg,.jpeg,.gif,.mp3,.wav,.mp4,.avi" multiple>
+            <div class="uploaded-files" id="uploaded-files"></div>
         </div>
 
         <div class="import-section">
@@ -157,7 +197,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/ChatGPT-Logo.png" alt="ChatGPT" class="btn-icon">
                     <span class="btn-text">ChatGPT</span>
                 </a>
-                <a href="https://alice.yandex.ru/chat" target="_blank" class="ai-help-btn yandexgpt">
+                <a href="https://alice.yandex.ru" target="_blank" class="ai-help-btn yandexgpt">
                     <img src="https://avatars.mds.yandex.net/get-yapic/25817/roxAjSQsPpYE7cyoAuop3v0cPY-1/orig" alt="YandexGPT" class="btn-icon">
                     <span class="btn-text">YandexGPT</span>
                 </a>
@@ -187,6 +227,17 @@
         </footer>
     </div>
 
+    <!-- Контекстное меню для графического режима -->
+    <div class="context-menu" id="context-menu">
+        <div class="context-item" data-action="rename" data-i18n="rename">Переименовать</div>
+        <div class="context-item" data-action="recolor" data-i18n="recolor">Перекрасить</div>
+        <div class="context-item" data-action="duplicate" data-i18n="duplicate">Дублировать</div>
+        <div class="context-item" data-action="copy" data-i18n="copy">Копировать</div>
+        <div class="context-item" data-action="paste" data-i18n="paste">Вставить</div>
+        <div class="context-item" data-action="delete" data-i18n="delete">Удалить</div>
+    </div>
+
+    <!-- Модальное окно импорта -->
     <div class="import-modal" id="import-modal">
         <div class="import-modal-content">
             <h3 class="modal-title" data-i18n="importModalTitle">Импорт файла</h3>

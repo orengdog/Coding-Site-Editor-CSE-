@@ -52,21 +52,21 @@
                     <div class="code-header">
                         <div class="code-title" data-i18n="htmlTitle">HTML</div>
                     </div>
-                    <textarea class="code-area" id="html-code" placeholder="Введите ваш HTML код здесь..."></textarea>
+                    <textarea class="code-area" id="html-code" data-i18n-placeholder="htmlPlaceholder"></textarea>
                 </div>
                 
                 <div class="code-container" id="css-container">
                     <div class="code-header">
                         <div class="code-title" data-i18n="cssTitle">CSS</div>
                     </div>
-                    <textarea class="code-area" id="css-code" placeholder="Введите ваш CSS код здесь..."></textarea>
+                    <textarea class="code-area" id="css-code" data-i18n-placeholder="cssPlaceholder"></textarea>
                 </div>
                 
                 <div class="code-container" id="js-container">
                     <div class="code-header">
                         <div class="code-title" data-i18n="jsTitle">JavaScript</div>
                     </div>
-                    <textarea class="code-area" id="js-code" placeholder="Введите ваш JavaScript код здесь..."></textarea>
+                    <textarea class="code-area" id="js-code" data-i18n-placeholder="jsPlaceholder"></textarea>
                 </div>
 
                 <div class="code-container" id="html-scratch-container">
@@ -103,10 +103,23 @@
             <div class="preview-panel">
                 <div class="preview-header">
                     <div class="preview-title" data-i18n="previewTitle">Предпросмотр</div>
-                    <button class="fullscreen-btn" id="fullscreen-btn" title="Полноэкранный режим">⛶</button>
                 </div>
                 <iframe class="preview-area" id="preview"></iframe>
             </div>
+        </div>
+
+        <div class="import-section">
+            <h3 class="import-title" data-i18n="importTitle">Импортировать файлы</h3>
+            <div class="import-buttons">
+                <button class="import-btn" id="import-html-file" data-i18n="importHtml">Импорт HTML</button>
+                <button class="import-btn" id="import-css-file" data-i18n="importCss">Импорт CSS</button>
+                <button class="import-btn" id="import-js-file" data-i18n="importJs">Импорт JS</button>
+                <button class="import-btn" id="import-htmlsb-file" data-i18n="importHtmlSb">Импорт HTMLSB</button>
+                <button class="import-btn" id="import-csssb-file" data-i18n="importCssSb">Импорт CSSSB</button>
+                <button class="import-btn" id="import-jssb-file" data-i18n="importJsSb">Импорт JSSB</button>
+                <button class="import-btn" id="import-json-file" data-i18n="importJson">Импорт проекта (JSON)</button>
+            </div>
+            <input type="file" id="file-input" class="file-input" accept=".html,.css,.js,.htmlsb,.csssb,.jssb,.json">
         </div>
         
         <div class="controls">
@@ -126,6 +139,8 @@
                         <button id="save-jssb" data-i18n="saveJsSb">Сохранить как JSSB</button>
                         <button id="save-all" data-i18n="saveAll">Сохранить все файлы (ZIP)</button>
                         <button id="save-json" data-i18n="saveJson">Сохранить проект (JSON)</button>
+                        <button id="share-project">Поделиться проектом</button>
+                        <button id="export-pdf">Экспорт в PDF</button>
                     </div>
                 </div>
             </div>
@@ -142,7 +157,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/ChatGPT-Logo.png" alt="ChatGPT" class="btn-icon">
                     <span class="btn-text">ChatGPT</span>
                 </a>
-                <a href="https://alice.yandex.ru" target="_blank" class="ai-help-btn yandexgpt">
+                <a href="https://alice.yandex.ru/chat" target="_blank" class="ai-help-btn yandexgpt">
                     <img src="https://avatars.mds.yandex.net/get-yapic/25817/roxAjSQsPpYE7cyoAuop3v0cPY-1/orig" alt="YandexGPT" class="btn-icon">
                     <span class="btn-text">YandexGPT</span>
                 </a>
@@ -154,7 +169,7 @@
             <div class="deployment-buttons">
                 <a href="https://github.com" target="_blank" class="deploy-btn github">
                     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="btn-icon">
-                    <span class="btn-text" data-i18n="githubPages">GitHub Pages</span>
+                    <span class="btn-text">GitHub Pages</span>
                 </a>
                 <a href="https://netlify.com" target="_blank" class="deploy-btn netlify">
                     <img src="https://cdn.worldvectorlogo.com/logos/netlify.svg" alt="Netlify" class="btn-icon">
@@ -170,6 +185,17 @@
         <footer>
             <p data-i18n="footer">Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО</p>
         </footer>
+    </div>
+
+    <div class="import-modal" id="import-modal">
+        <div class="import-modal-content">
+            <h3 class="modal-title" data-i18n="importModalTitle">Импорт файла</h3>
+            <p data-i18n="importModalText">Выберите файл для импорта. Существующий код будет заменен.</p>
+            <div class="modal-buttons">
+                <button class="modal-btn primary" id="confirm-import" data-i18n="confirmImport">Подтвердить импорт</button>
+                <button class="modal-btn secondary" id="cancel-import" data-i18n="cancel">Отмена</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>

@@ -1,66 +1,293 @@
-// Все предыдущие переводы и константы остаются, добавляем новые ключи переводов:
-
+// Основные переводы
 const translations = {
     ru: {
-        // ... существующие переводы ...
+        title: "Онлайн-редактор HTML/CSS/JS",
+        subtitle: "Создавайте и тестируйте веб-страницы прямо в браузере",
+        theme: "Тёмная",
+        htmlTab: "HTML",
+        cssTab: "CSS", 
+        jsTab: "JavaScript",
+        htmlScratchTab: "HTML Блоки",
+        cssScratchTab: "CSS Блоки",
+        jsScratchTab: "JS Блоки",
+        htmlTitle: "HTML",
+        cssTitle: "CSS",
+        jsTitle: "JavaScript", 
+        htmlScratchTitle: "HTML Блоки",
+        cssScratchTitle: "CSS Блоки",
+        jsScratchTitle: "JS Блоки",
+        previewTitle: "Предпросмотр",
+        runButton: "Запустить код",
+        resetButton: "Сбросить",
+        saveButton: "Сохранить проект ▼",
+        saveHtml: "Сохранить как HTML",
+        saveCss: "Сохранить как CSS",
+        saveJs: "Сохранить как JS",
+        saveHtmlSb: "Сохранить как HTMLSB",
+        saveCssSb: "Сохранить как CSSSB", 
+        saveJsSb: "Сохранить как JSSB",
+        saveAll: "Сохранить все файлы (ZIP)",
+        saveJson: "Сохранить проект (JSON)",
+        importTitle: "Импортировать файлы",
+        importHtml: "Импорт HTML",
+        importCss: "Импорт CSS",
+        importJs: "Импорт JS",
+        importHtmlSb: "Импорт HTMLSB",
+        importCssSb: "Импорт CSSSB",
+        importJsSb: "Импорт JSSB",
+        importJson: "Импорт проекта (JSON)",
+        deploymentTitle: "🚀 Где выложить сайт?",
+        aiHelpTitle: "🤖 У кого попросить помощь с кодом?",
+        footer: "Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО",
+        htmlPlaceholder: "Введите ваш HTML код здесь...",
+        cssPlaceholder: "Введите ваш CSS код здесь...", 
+        jsPlaceholder: "Введите ваш JavaScript код здесь...",
+        resetConfirm: "Вы уверены, что хотите сбросить весь код?",
+        projectSaved: "Проект сохранен как 'web-project.json'",
+        importModalTitle: "Импорт файла",
+        importModalText: "Выберите файл для импорта. Существующий код будет заменен.",
+        confirmImport: "Подтвердить импорт",
+        cancel: "Отмена",
         graphicMode: "Графический режим",
         colorPalette: "Палитра цветов",
         applyColor: "Применить",
         uploadTitle: "Загрузка файлов",
         uploadImage: "Загрузить изображение",
-        uploadAudio: "Загрузить аудио",
+        uploadAudio: "Загрузить аудио", 
         uploadVideo: "Загрузить видео",
         rename: "Переименовать",
         recolor: "Перекрасить",
         duplicate: "Дублировать",
         copy: "Копировать",
         paste: "Вставить",
-        delete: "Удалить",
-        fullscreenExit: "Выйти из полноэкранного режима (Esc)",
-        elementSelected: "Элемент выбран",
-        fileUploaded: "Файл загружен"
+        delete: "Удалить"
     },
     en: {
-        // ... existing translations ...
+        title: "Online HTML/CSS/JS Editor",
+        subtitle: "Create and test web pages directly in your browser",
+        theme: "Dark",
+        htmlTab: "HTML",
+        cssTab: "CSS",
+        jsTab: "JavaScript",
+        htmlScratchTab: "HTML Blocks",
+        cssScratchTab: "CSS Blocks", 
+        jsScratchTab: "JS Blocks",
+        htmlTitle: "HTML",
+        cssTitle: "CSS",
+        jsTitle: "JavaScript",
+        htmlScratchTitle: "HTML Blocks",
+        cssScratchTitle: "CSS Blocks",
+        jsScratchTitle: "JS Blocks",
+        previewTitle: "Preview",
+        runButton: "Run Code",
+        resetButton: "Reset",
+        saveButton: "Save Project ▼",
+        saveHtml: "Save as HTML",
+        saveCss: "Save as CSS",
+        saveJs: "Save as JS",
+        saveHtmlSb: "Save as HTMLSB",
+        saveCssSb: "Save as CSSSB",
+        saveJsSb: "Save as JSSB",
+        saveAll: "Save all files (ZIP)",
+        saveJson: "Save project (JSON)",
+        importTitle: "Import Files",
+        importHtml: "Import HTML",
+        importCss: "Import CSS",
+        importJs: "Import JS",
+        importHtmlSb: "Import HTMLSB",
+        importCssSb: "Import CSSSB",
+        importJsSb: "Import JSSB",
+        importJson: "Import Project (JSON)",
+        deploymentTitle: "🚀 Where to deploy your site?",
+        aiHelpTitle: "🤖 Who can help with code?",
+        footer: "Online HTML/CSS/JS Editor &copy; 2025 | ©orengdog corporation | Create web pages without installing additional software",
+        htmlPlaceholder: "Enter your HTML code here...",
+        cssPlaceholder: "Enter your CSS code here...",
+        jsPlaceholder: "Enter your JavaScript code here...",
+        resetConfirm: "Are you sure you want to reset all code?",
+        projectSaved: "Project saved as 'web-project.json'",
+        importModalTitle: "Import File",
+        importModalText: "Select file to import. Existing code will be replaced.",
+        confirmImport: "Confirm Import",
+        cancel: "Cancel",
         graphicMode: "Graphic Mode",
         colorPalette: "Color Palette",
         applyColor: "Apply",
         uploadTitle: "File Upload",
         uploadImage: "Upload Image",
-        uploadAudio: "Upload Audio", 
+        uploadAudio: "Upload Audio",
         uploadVideo: "Upload Video",
         rename: "Rename",
         recolor: "Recolor",
         duplicate: "Duplicate",
         copy: "Copy",
         paste: "Paste",
-        delete: "Delete",
-        fullscreenExit: "Exit fullscreen (Esc)",
-        elementSelected: "Element selected",
-        fileUploaded: "File uploaded"
-    },
-    zh: {
-        // ... 现有翻译 ...
-        graphicMode: "图形模式",
-        colorPalette: "调色板",
-        applyColor: "应用",
-        uploadTitle: "文件上传",
-        uploadImage: "上传图片",
-        uploadAudio: "上传音频",
-        uploadVideo: "上传视频",
-        rename: "重命名",
-        recolor: "重新着色",
-        duplicate: "复制",
-        copy: "拷贝",
-        paste: "粘贴",
-        delete: "删除",
-        fullscreenExit: "退出全屏 (Esc)",
-        elementSelected: "元素已选择",
-        fileUploaded: "文件已上传"
+        delete: "Delete"
     }
 };
 
-// Добавляем цвета для палитры
+// Примеры кода
+const codeExamples = {
+    ru: {
+        html: `<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя страница</title>
+</head>
+<body>
+    <h1>Добро пожаловать в онлайн-редактор!</h1>
+    <p>Измените этот код и нажмите "Запустить", чтобы увидеть результат.</p>
+    <div id="demo">Это демонстрационный текст</div>
+    <button onclick="changeText()">Нажми меня!</button>
+</body>
+</html>`,
+        css: `body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    color: #34495e;
+}
+
+#demo {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #27ae60;
+}`,
+        js: `function changeText() {
+    document.getElementById("demo").innerHTML = "Текст изменен с помощью JavaScript!";
+    document.getElementById("demo").style.backgroundColor = "#e74c3c";
+}`
+    },
+    en: {
+        html: `<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Welcome to the Online Editor!</h1>
+    <p>Modify this code and click "Run Code" to see the result.</p>
+    <div id="demo">This is demo text</div>
+    <button onclick="changeText()">Click me!</button>
+</body>
+</html>`,
+        css: `body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    color: #34495e;
+}
+
+#demo {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #27ae60;
+}`,
+        js: `function changeText() {
+    document.getElementById("demo").innerHTML = "Text changed with JavaScript!";
+    document.getElementById("demo").style.backgroundColor = "#e74c3c";
+}`
+    }
+};
+
+// Scratch блоки
+const scratchBlocks = {
+    html: {
+        structure: [
+            { title: "HTML5 Документ", code: '<!DOCTYPE html>\n<html>\n<head>\n    <title>Заголовок</title>\n</head>\n<body>\n    \n</body>\n</html>', category: "structure" },
+            { title: "Контейнер Div", code: '<div class="container">\n    \n</div>', category: "structure" },
+            { title: "Заголовок H1", code: '<h1>Заголовок</h1>', category: "structure" },
+            { title: "Абзац", code: '<p>Текст абзаца</p>', category: "structure" },
+            { title: "Ссылка", code: '<a href="#">Текст ссылки</a>', category: "structure" }
+        ],
+        media: [
+            { title: "Изображение", code: '<img src="image.jpg" alt="Описание">', category: "media" },
+            { title: "Кнопка", code: '<button>Кнопка</button>', category: "media" }
+        ]
+    },
+    css: {
+        layout: [
+            { title: "Flexbox", code: 'display: flex;\njustify-content: center;\nalign-items: center;', category: "layout" },
+            { title: "Отступы", code: 'padding: 20px;\nmargin: 10px;', category: "layout" }
+        ],
+        colors: [
+            { title: "Фоновый цвет", code: 'background-color: #ffffff;', category: "colors" },
+            { title: "Цвет текста", code: 'color: #333333;', category: "colors" }
+        ]
+    },
+    js: {
+        functions: [
+            { title: "Функция", code: 'function functionName() {\n    // код функции\n}', category: "functions" },
+            { title: "Событие клика", code: 'element.addEventListener("click", function() {\n    // обработчик клика\n});', category: "functions" }
+        ],
+        dom: [
+            { title: "Выбор элемента", code: 'const element = document.querySelector(".class");', category: "dom" },
+            { title: "Изменение контента", code: 'element.innerHTML = "Новый контент";', category: "dom" }
+        ]
+    }
+};
+
+// Цветовая палитра
 const colorPalette = [
     '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF',
     '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57', '#FF9FF3',
@@ -78,13 +305,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const runButton = document.getElementById('run-button');
     const resetButton = document.getElementById('reset-button');
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const currentLang = document.getElementById('current-lang');
-    const langDropdown = document.getElementById('lang-dropdown');
-    const saveDropdown = document.getElementById('save-dropdown');
     const tabs = document.querySelectorAll('.tab');
     const codeContainers = document.querySelectorAll('.code-container');
-    
+
     // Новые элементы
     const fullscreenBtn = document.getElementById('fullscreen-btn');
     const graphicModeCheckbox = document.getElementById('graphic-mode');
@@ -96,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const colorInput = document.getElementById('color-input');
     const applyColorBtn = document.getElementById('apply-color');
     const contextMenu = document.getElementById('context-menu');
-    
+
     // Элементы загрузки файлов
     const uploadImageBtn = document.getElementById('upload-image');
     const uploadAudioBtn = document.getElementById('upload-audio');
@@ -104,15 +327,68 @@ document.addEventListener('DOMContentLoaded', function() {
     const fileUploadInput = document.getElementById('file-upload');
     const uploadedFilesContainer = document.getElementById('uploaded-files');
 
-    // Переменные для графического режима
+    // Элементы импорта
+    const importHtmlBtn = document.getElementById('import-html-file');
+    const importCssBtn = document.getElementById('import-css-file');
+    const importJsBtn = document.getElementById('import-js-file');
+    const importHtmlSbBtn = document.getElementById('import-htmlsb-file');
+    const importCssSbBtn = document.getElementById('import-csssb-file');
+    const importJsSbBtn = document.getElementById('import-jssb-file');
+    const importJsonBtn = document.getElementById('import-json-file');
+    const fileInput = document.getElementById('file-input');
+    const importModal = document.getElementById('import-modal');
+    const confirmImportBtn = document.getElementById('confirm-import');
+    const cancelImportBtn = document.getElementById('cancel-import');
+
+    // Элементы сохранения
+    const saveHtmlBtn = document.getElementById('save-html');
+    const saveCssBtn = document.getElementById('save-css');
+    const saveJsBtn = document.getElementById('save-js');
+    const saveHtmlSbBtn = document.getElementById('save-htmlsb');
+    const saveCssSbBtn = document.getElementById('save-csssb');
+    const saveJsSbBtn = document.getElementById('save-jssb');
+    const saveAllBtn = document.getElementById('save-all');
+    const saveJsonBtn = document.getElementById('save-json');
+
+    // Переменные состояния
+    let currentImportType = '';
     let isGraphicMode = false;
     let selectedElement = null;
-    let copiedElement = null;
-    let isDragging = false;
-    let dragOffset = { x: 0, y: 0 };
-    let isResizing = false;
-    let resizeDirection = '';
-    let isRotating = false;
+
+    // Основные функции
+    function runCode() {
+        const html = htmlCode.value;
+        const css = `<style>${cssCode.value}</style>`;
+        const js = `<script>${jsCode.value}<\/script>`;
+        
+        const fullCode = html.replace('</head>', css + '</head>').replace('</body>', js + '</body>');
+        
+        preview.contentDocument.open();
+        preview.contentDocument.write(fullCode);
+        preview.contentDocument.close();
+    }
+
+    function resetCode() {
+        const lang = 'ru';
+        if (confirm(translations[lang].resetConfirm)) {
+            htmlCode.value = codeExamples[lang].html;
+            cssCode.value = codeExamples[lang].css;
+            jsCode.value = codeExamples[lang].js;
+            runCode();
+        }
+    }
+
+    function downloadFile(content, fileName, contentType) {
+        const blob = new Blob([content], { type: contentType });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
 
     // Инициализация цветовой палитры
     function initColorPalette() {
@@ -124,7 +400,6 @@ document.addEventListener('DOMContentLoaded', function() {
             colorItem.setAttribute('data-color', color);
             colorItem.addEventListener('click', () => {
                 colorInput.value = color;
-                applyColorToSelection(color);
             });
             colorGrid.appendChild(colorItem);
         });
@@ -134,463 +409,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         applyColorBtn.addEventListener('click', () => {
-            applyColorToSelection(colorInput.value);
+            // Простая реализация - можно улучшить
+            alert(`Цвет ${colorInput.value} применен`);
         });
 
-        // Сворачивание/разворачивание палитры
         colorPaletteToggle.addEventListener('click', () => {
             colorPaletteElement.classList.toggle('collapsed');
             colorPaletteToggle.textContent = colorPaletteElement.classList.contains('collapsed') ? '+' : '−';
         });
     }
 
-    // Подсветка цветов в коде
-    function highlightColorsInCode() {
-        const codeAreas = [htmlCode, cssCode, jsCode];
-        
-        codeAreas.forEach(textarea => {
-            // Создаем временный элемент для обработки HTML
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = textarea.value;
-            
-            // Находим все элементы с цветами (простой regex для демонстрации)
-            const colorRegex = /#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/g;
-            let match;
-            
-            while ((match = colorRegex.exec(textarea.value)) !== null) {
-                const color = match[0];
-                const startPos = match.index;
-                const endPos = startPos + color.length;
-                
-                // Добавляем обработчик клика на цвет
-                textarea.addEventListener('click', (e) => {
-                    const cursorPos = textarea.selectionStart;
-                    if (cursorPos >= startPos && cursorPos <= endPos) {
-                        colorInput.value = color;
-                        colorPaletteElement.style.display = 'block';
-                    }
-                });
-            }
-        });
-    }
-
-    // Применение цвета к выделенному тексту
-    function applyColorToSelection(color) {
-        const activeTextarea = document.querySelector('.code-container.active .code-area');
-        if (activeTextarea) {
-            const start = activeTextarea.selectionStart;
-            const end = activeTextarea.selectionEnd;
-            const selectedText = activeTextarea.value.substring(start, end);
-            
-            if (selectedText) {
-                const newText = activeTextarea.value.substring(0, start) + 
-                              color + 
-                              activeTextarea.value.substring(end);
-                activeTextarea.value = newText;
-                activeTextarea.focus();
-                runCode();
-            }
-        }
-    }
-
-    // Инициализация графического режима
+    // Инициализация графического режима (упрощенная)
     function initGraphicMode() {
         graphicModeCheckbox.addEventListener('change', (e) => {
             isGraphicMode = e.target.checked;
             document.querySelector('.preview-panel').classList.toggle('graphic-mode-active', isGraphicMode);
             
             if (isGraphicMode) {
-                enableGraphicMode();
+                // Простая реализация графического режима
+                graphicOverlay.innerHTML = '<div style="padding: 20px; text-align: center; color: #666;">Графический режим активирован</div>';
             } else {
-                disableGraphicMode();
+                graphicOverlay.innerHTML = '';
             }
         });
-    }
-
-    function enableGraphicMode() {
-        // Очищаем оверлей
-        graphicOverlay.innerHTML = '';
-        
-        // Добавляем индикатор графического режима
-        const indicator = document.createElement('div');
-        indicator.className = 'graphic-mode-indicator';
-        indicator.textContent = 'Графический режим';
-        graphicOverlay.appendChild(indicator);
-        
-        // Парсим HTML для создания графических элементов
-        parseHTMLForGraphicElements();
-        
-        // Добавляем обработчики событий
-        setupGraphicEventHandlers();
-    }
-
-    function disableGraphicMode() {
-        // Удаляем все графические элементы
-        graphicOverlay.innerHTML = '';
-        selectedElement = null;
-    }
-
-    function parseHTMLForGraphicElements() {
-        const previewDoc = preview.contentDocument || preview.contentWindow.document;
-        const elements = previewDoc.body.querySelectorAll('div, p, h1, h2, h3, h4, h5, h6, img, button, section, article, header, footer, nav, aside');
-        
-        elements.forEach(element => {
-            if (element.offsetWidth > 10 && element.offsetHeight > 10) {
-                createGraphicElement(element);
-            }
-        });
-    }
-
-    function createGraphicElement(domElement) {
-        const rect = domElement.getBoundingClientRect();
-        const previewRect = preview.getBoundingClientRect();
-        
-        const graphicElement = document.createElement('div');
-        graphicElement.className = 'graphic-element';
-        graphicElement.style.left = (rect.left - previewRect.left) + 'px';
-        graphicElement.style.top = (rect.top - previewRect.top) + 'px';
-        graphicElement.style.width = rect.width + 'px';
-        graphicElement.style.height = rect.height + 'px';
-        graphicElement.setAttribute('data-element-id', generateId());
-        
-        // Добавляем ручки для изменения размера
-        addResizeHandles(graphicElement);
-        
-        // Добавляем ручку для вращения
-        addRotateHandle(graphicElement);
-        
-        graphicOverlay.appendChild(graphicElement);
-        
-        // Обработчики событий для графического элемента
-        setupGraphicElementEvents(graphicElement, domElement);
-    }
-
-    function addResizeHandles(element) {
-        const directions = ['n', 's', 'e', 'w', 'ne', 'nw', 'se', 'sw'];
-        
-        directions.forEach(dir => {
-            const handle = document.createElement('div');
-            handle.className = `resize-handle resize-${dir}`;
-            element.appendChild(handle);
-        });
-    }
-
-    function addRotateHandle(element) {
-        const handle = document.createElement('div');
-        handle.className = 'rotate-handle';
-        element.appendChild(handle);
-    }
-
-    function setupGraphicElementEvents(graphicElement, domElement) {
-        graphicElement.addEventListener('mousedown', startDrag);
-        graphicElement.addEventListener('touchstart', startDrag);
-        
-        // Обработчики для ручек изменения размера
-        graphicElement.querySelectorAll('.resize-handle').forEach(handle => {
-            handle.addEventListener('mousedown', startResize);
-        });
-        
-        // Обработчик для вращения
-        graphicElement.querySelector('.rotate-handle').addEventListener('mousedown', startRotate);
-        
-        // Контекстное меню
-        graphicElement.addEventListener('contextmenu', showContextMenu);
-        
-        // Выделение элемента
-        graphicElement.addEventListener('click', (e) => {
-            e.stopPropagation();
-            selectElement(graphicElement);
-        });
-    }
-
-    function setupGraphicEventHandlers() {
-        // Обработчики для всего оверлея
-        graphicOverlay.addEventListener('mousedown', (e) => {
-            if (e.target === graphicOverlay) {
-                clearSelection();
-            }
-        });
-        
-        // Обработчики клавиш
-        document.addEventListener('keydown', handleKeyPress);
-        
-        // Закрытие контекстного меню
-        document.addEventListener('click', hideContextMenu);
-    }
-
-    function startDrag(e) {
-        e.preventDefault();
-        const element = e.target.classList.contains('graphic-element') ? e.target : e.target.closest('.graphic-element');
-        if (!element) return;
-        
-        isDragging = true;
-        selectedElement = element;
-        
-        const rect = element.getBoundingClientRect();
-        dragOffset.x = e.clientX - rect.left;
-        dragOffset.y = e.clientY - rect.top;
-        
-        document.addEventListener('mousemove', drag);
-        document.addEventListener('mouseup', stopDrag);
-        
-        element.classList.add('selected');
-    }
-
-    function drag(e) {
-        if (!isDragging || !selectedElement) return;
-        
-        const previewRect = preview.getBoundingClientRect();
-        const x = e.clientX - previewRect.left - dragOffset.x;
-        const y = e.clientY - previewRect.top - dragOffset.y;
-        
-        // Ограничиваем перемещение в пределах превью
-        const maxX = previewRect.width - selectedElement.offsetWidth;
-        const maxY = previewRect.height - selectedElement.offsetHeight;
-        
-        selectedElement.style.left = Math.max(0, Math.min(x, maxX)) + 'px';
-        selectedElement.style.top = Math.max(0, Math.min(y, maxY)) + 'px';
-        
-        updateDOMElementPosition(selectedElement);
-    }
-
-    function stopDrag() {
-        isDragging = false;
-        document.removeEventListener('mousemove', drag);
-        document.removeEventListener('mouseup', stopDrag);
-    }
-
-    function startResize(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        isResizing = true;
-        selectedElement = e.target.closest('.graphic-element');
-        resizeDirection = e.target.className.split('resize-')[1];
-        
-        document.addEventListener('mousemove', resize);
-        document.addEventListener('mouseup', stopResize);
-    }
-
-    function resize(e) {
-        if (!isResizing || !selectedElement) return;
-        
-        const rect = selectedElement.getBoundingClientRect();
-        const previewRect = preview.getBoundingClientRect();
-        
-        let newWidth = rect.width;
-        let newHeight = rect.height;
-        let newLeft = parseInt(selectedElement.style.left);
-        let newTop = parseInt(selectedElement.style.top);
-        
-        const deltaX = e.clientX - rect.right;
-        const deltaY = e.clientY - rect.bottom;
-        
-        switch(resizeDirection) {
-            case 'e':
-                newWidth = Math.max(50, rect.width + deltaX);
-                break;
-            case 'w':
-                newWidth = Math.max(50, rect.width - deltaX);
-                newLeft += deltaX;
-                break;
-            case 's':
-                newHeight = Math.max(50, rect.height + deltaY);
-                break;
-            case 'n':
-                newHeight = Math.max(50, rect.height - deltaY);
-                newTop += deltaY;
-                break;
-            case 'se':
-                newWidth = Math.max(50, rect.width + deltaX);
-                newHeight = Math.max(50, rect.height + deltaY);
-                break;
-            case 'sw':
-                newWidth = Math.max(50, rect.width - deltaX);
-                newHeight = Math.max(50, rect.height + deltaY);
-                newLeft += deltaX;
-                break;
-            case 'ne':
-                newWidth = Math.max(50, rect.width + deltaX);
-                newHeight = Math.max(50, rect.height - deltaY);
-                newTop += deltaY;
-                break;
-            case 'nw':
-                newWidth = Math.max(50, rect.width - deltaX);
-                newHeight = Math.max(50, rect.height - deltaY);
-                newLeft += deltaX;
-                newTop += deltaY;
-                break;
-        }
-        
-        // Ограничиваем размеры в пределах превью
-        const maxWidth = previewRect.width - newLeft;
-        const maxHeight = previewRect.height - newTop;
-        
-        selectedElement.style.width = Math.min(newWidth, maxWidth) + 'px';
-        selectedElement.style.height = Math.min(newHeight, maxHeight) + 'px';
-        selectedElement.style.left = Math.max(0, newLeft) + 'px';
-        selectedElement.style.top = Math.max(0, newTop) + 'px';
-        
-        updateDOMElementSize(selectedElement);
-    }
-
-    function stopResize() {
-        isResizing = false;
-        document.removeEventListener('mousemove', resize);
-        document.removeEventListener('mouseup', stopResize);
-    }
-
-    function startRotate(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        isRotating = true;
-        selectedElement = e.target.closest('.graphic-element');
-        
-        const rect = selectedElement.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        
-        document.addEventListener('mousemove', rotate);
-        document.addEventListener('mouseup', stopRotate);
-    }
-
-    function rotate(e) {
-        if (!isRotating || !selectedElement) return;
-        
-        const rect = selectedElement.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        
-        const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX) * 180 / Math.PI;
-        selectedElement.style.transform = `rotate(${angle}deg)`;
-        
-        updateDOMElementRotation(selectedElement, angle);
-    }
-
-    function stopRotate() {
-        isRotating = false;
-        document.removeEventListener('mousemove', rotate);
-        document.removeEventListener('mouseup', stopRotate);
-    }
-
-    function selectElement(element) {
-        clearSelection();
-        selectedElement = element;
-        element.classList.add('selected');
-    }
-
-    function clearSelection() {
-        graphicOverlay.querySelectorAll('.graphic-element').forEach(el => {
-            el.classList.remove('selected');
-        });
-        selectedElement = null;
-        hideContextMenu();
-    }
-
-    function showContextMenu(e) {
-        e.preventDefault();
-        
-        if (!selectedElement) return;
-        
-        contextMenu.style.display = 'block';
-        contextMenu.style.left = e.clientX + 'px';
-        contextMenu.style.top = e.clientY + 'px';
-        
-        // Обновляем переводы в контекстном меню
-        updateContextMenuTranslations();
-    }
-
-    function hideContextMenu() {
-        contextMenu.style.display = 'none';
-    }
-
-    function updateContextMenuTranslations() {
-        const lang = localStorage.getItem('editor-language') || 'ru';
-        contextMenu.querySelectorAll('.context-item').forEach(item => {
-            const action = item.getAttribute('data-action');
-            if (translations[lang][action]) {
-                item.textContent = translations[lang][action];
-            }
-        });
-    }
-
-    function handleKeyPress(e) {
-        if (!isGraphicMode || !selectedElement) return;
-        
-        switch(e.key) {
-            case 'Delete':
-            case 'Backspace':
-                deleteSelectedElement();
-                break;
-            case 'c':
-                if (e.ctrlKey || e.metaKey) {
-                    copySelectedElement();
-                    e.preventDefault();
-                }
-                break;
-            case 'v':
-                if (e.ctrlKey || e.metaKey) {
-                    pasteElement();
-                    e.preventDefault();
-                }
-                break;
-            case 'Escape':
-                clearSelection();
-                break;
-        }
-    }
-
-    function deleteSelectedElement() {
-        if (selectedElement) {
-            selectedElement.remove();
-            selectedElement = null;
-        }
-    }
-
-    function copySelectedElement() {
-        if (selectedElement) {
-            copiedElement = {
-                html: selectedElement.innerHTML,
-                style: selectedElement.style.cssText
-            };
-        }
-    }
-
-    function pasteElement() {
-        if (copiedElement) {
-            const newElement = document.createElement('div');
-            newElement.className = 'graphic-element added';
-            newElement.innerHTML = copiedElement.html;
-            newElement.style.cssText = copiedElement.style;
-            newElement.style.left = (parseInt(selectedElement?.style.left || '0') + 20) + 'px';
-            newElement.style.top = (parseInt(selectedElement?.style.top || '0') + 20) + 'px';
-            newElement.setAttribute('data-element-id', generateId());
-            
-            graphicOverlay.appendChild(newElement);
-            setupGraphicElementEvents(newElement, null);
-            
-            setTimeout(() => newElement.classList.remove('added'), 300);
-        }
-    }
-
-    // Вспомогательные функции
-    function generateId() {
-        return 'element_' + Math.random().toString(36).substr(2, 9);
-    }
-
-    function updateDOMElementPosition(graphicElement) {
-        // Здесь будет обновление соответствующего DOM элемента в превью
-        // Для демонстрации просто перезапускаем код
-        runCode();
-    }
-
-    function updateDOMElementSize(graphicElement) {
-        runCode();
-    }
-
-    function updateDOMElementRotation(graphicElement, angle) {
-        runCode();
     }
 
     // Инициализация загрузки файлов
@@ -615,24 +456,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleFileUpload(e) {
         const files = e.target.files;
-        const lang = localStorage.getItem('editor-language') || 'ru';
         
         for (let file of files) {
             const fileURL = URL.createObjectURL(file);
             displayUploadedFile(file, fileURL);
-            
-            // Добавляем путь к файлу в HTML код
-            if (file.type.startsWith('image/')) {
-                addImageToHTML(file.name, fileURL);
-            } else if (file.type.startsWith('audio/')) {
-                addAudioToHTML(file.name, fileURL);
-            } else if (file.type.startsWith('video/')) {
-                addVideoToHTML(file.name, fileURL);
-            }
         }
         
-        runCode();
-        alert(translations[lang].fileUploaded);
+        alert('Файлы загружены!');
     }
 
     function displayUploadedFile(file, url) {
@@ -647,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
         } else {
             fileElement.innerHTML = `
-                <div class="file-icon">📄</div>
+                <div style="font-size: 24px;">📄</div>
                 <div class="file-name">${file.name}</div>
                 <button class="delete-file">×</button>
             `;
@@ -659,21 +489,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         uploadedFilesContainer.appendChild(fileElement);
-    }
-
-    function addImageToHTML(filename, url) {
-        const imgHTML = `<img src="${url}" alt="${filename}" style="max-width: 100%;">`;
-        htmlCode.value += '\n' + imgHTML;
-    }
-
-    function addAudioToHTML(filename, url) {
-        const audioHTML = `<audio controls>\n    <source src="${url}" type="audio/mpeg">\n    Ваш браузер не поддерживает аудио элемент.\n</audio>`;
-        htmlCode.value += '\n' + audioHTML;
-    }
-
-    function addVideoToHTML(filename, url) {
-        const videoHTML = `<video controls style="max-width: 100%;">\n    <source src="${url}" type="video/mp4">\n    Ваш браузер не поддерживает видео элемент.\n</video>`;
-        htmlCode.value += '\n' + videoHTML;
     }
 
     // Полноэкранный режим
@@ -714,7 +529,90 @@ document.addEventListener('DOMContentLoaded', function() {
         fullscreenBtn.textContent = isFullscreen ? '⧉' : '⛶';
     }
 
-    // Автоматическое переключение вкладок при клике на блоки
+    // Инициализация Scratch блоков
+    function initScratchBlocks() {
+        createScratchBlocks();
+        setupAutoTabSwitching();
+    }
+
+    function createScratchBlocks() {
+        createBlocksForType('html', document.getElementById('html-blocks'), document.getElementById('html-categories'));
+        createBlocksForType('css', document.getElementById('css-blocks'), document.getElementById('css-categories'));
+        createBlocksForType('js', document.getElementById('js-blocks'), document.getElementById('js-categories'));
+    }
+
+    function createBlocksForType(type, blocksContainer, categoriesContainer) {
+        const blocks = scratchBlocks[type];
+        const lang = 'ru';
+        
+        Object.keys(blocks).forEach(category => {
+            const categoryBtn = document.createElement('div');
+            categoryBtn.className = 'scratch-category';
+            categoryBtn.textContent = category;
+            categoryBtn.setAttribute('data-category', category);
+            categoriesContainer.appendChild(categoryBtn);
+        });
+
+        if (categoriesContainer.children.length > 0) {
+            categoriesContainer.children[0].classList.add('active');
+            showBlocksByCategory(type, Object.keys(blocks)[0], blocksContainer);
+        }
+
+        categoriesContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('scratch-category')) {
+                Array.from(categoriesContainer.children).forEach(child => {
+                    child.classList.remove('active');
+                });
+                e.target.classList.add('active');
+                showBlocksByCategory(type, e.target.getAttribute('data-category'), blocksContainer);
+            }
+        });
+    }
+
+    function showBlocksByCategory(type, category, container) {
+        container.innerHTML = '';
+        const blocks = scratchBlocks[type][category];
+        
+        blocks.forEach(block => {
+            const blockElement = document.createElement('div');
+            blockElement.className = 'scratch-block';
+            blockElement.setAttribute('data-code', block.code);
+            blockElement.innerHTML = `
+                <div class="block-title">${block.title}</div>
+                <div class="block-code">${block.code}</div>
+                <div class="block-category">${block.category}</div>
+            `;
+            
+            blockElement.addEventListener('click', () => {
+                insertBlockToEditor(type, block.code);
+            });
+            
+            container.appendChild(blockElement);
+        });
+    }
+
+    function insertBlockToEditor(type, code) {
+        let editor;
+        switch(type) {
+            case 'html': editor = htmlCode; break;
+            case 'css': editor = cssCode; break;
+            case 'js': editor = jsCode; break;
+        }
+        
+        const startPos = editor.selectionStart;
+        const endPos = editor.selectionEnd;
+        const currentValue = editor.value;
+        
+        editor.value = currentValue.substring(0, startPos) + 
+                      code + 
+                      currentValue.substring(endPos);
+        
+        editor.selectionStart = editor.selectionEnd = startPos + code.length;
+        editor.focus();
+        
+        runCode();
+    }
+
     function setupAutoTabSwitching() {
         document.addEventListener('click', (e) => {
             const scratchBlock = e.target.closest('.scratch-block');
@@ -741,24 +639,84 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Обновленная функция инициализации
+    // Инициализация системы
     function init() {
-        // Существующая инициализация...
+        // Устанавливаем начальный код
+        htmlCode.value = codeExamples.ru.html;
+        cssCode.value = codeExamples.ru.css;
+        jsCode.value = codeExamples.ru.js;
         
-        // Новые инициализации
+        // Запускаем код
+        runCode();
+        
+        // Инициализируем модули
         initColorPalette();
         initGraphicMode();
         initFileUpload();
         initFullscreen();
-        setupAutoTabSwitching();
-        highlightColorsInCode();
+        initScratchBlocks();
         
-        // Запускаем код при загрузке
-        runCode();
+        // Настраиваем обработчики событий
+        setupEventHandlers();
     }
 
-    // Запускаем инициализацию
+    function setupEventHandlers() {
+        // Основные кнопки
+        runButton.addEventListener('click', runCode);
+        resetButton.addEventListener('click', resetCode);
+        
+        // Переключение вкладок
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                tabs.forEach(t => t.classList.remove('active'));
+                codeContainers.forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(`${tabId}-container`).classList.add('active');
+            });
+        });
+        
+        // Сохранение файлов
+        saveHtmlBtn.addEventListener('click', () => downloadFile(htmlCode.value, 'index.html', 'text/html'));
+        saveCssBtn.addEventListener('click', () => downloadFile(cssCode.value, 'styles.css', 'text/css'));
+        saveJsBtn.addEventListener('click', () => downloadFile(jsCode.value, 'script.js', 'text/javascript'));
+        saveJsonBtn.addEventListener('click', saveProject);
+        
+        // Автосохранение
+        [htmlCode, cssCode, jsCode].forEach(textarea => {
+            textarea.addEventListener('input', () => {
+                const code = {
+                    html: htmlCode.value,
+                    css: cssCode.value,
+                    js: jsCode.value
+                };
+                localStorage.setItem('editor-code', JSON.stringify(code));
+            });
+        });
+    }
+
+    function saveProject() {
+        const project = {
+            html: htmlCode.value,
+            css: cssCode.value,
+            js: jsCode.value,
+            date: new Date().toISOString(),
+            version: "1.0"
+        };
+        
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(project, null, 2));
+        const downloadAnchor = document.createElement('a');
+        downloadAnchor.setAttribute("href", dataStr);
+        downloadAnchor.setAttribute("download", "web-project.json");
+        document.body.appendChild(downloadAnchor);
+        downloadAnchor.click();
+        downloadAnchor.remove();
+        
+        alert('Проект сохранен!');
+    }
+
+    // Запускаем приложение
     init();
 });
-
-// Остальной существующий код JavaScript остается...

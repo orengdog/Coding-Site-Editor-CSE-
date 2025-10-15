@@ -196,6 +196,7 @@ h1 {
     background-color: var(--code-bg);
     color: var(--text-color);
     outline: none;
+    border-radius: 0 0 0 10px;
 }
 
 .preview-panel {
@@ -220,53 +221,11 @@ h1 {
     font-size: 1.1rem;
 }
 
-.preview-controls {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.fullscreen-btn {
-    background: none;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.fullscreen-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.graphic-mode-toggle {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.graphic-mode-toggle input {
-    width: 18px;
-    height: 18px;
-}
-
-.preview-wrapper {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
-}
-
 .preview-area {
-    width: 100%;
-    height: 100%;
+    flex: 1;
     border: none;
     background-color: white;
+    border-radius: 0 0 10px 0;
 }
 
 .controls {
@@ -662,6 +621,14 @@ footer {
 }
 
 /* Стили для Scratch блоков */
+.scratch-panel {
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--border-color);
+}
+
 .scratch-blocks-container {
     flex: 1;
     display: flex;
@@ -800,289 +767,14 @@ footer {
     display: none;
 }
 
-/* Графический оверлей */
-.graphic-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 100;
-    display: none;
+@keyframes blockPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
-.graphic-mode-active .graphic-overlay {
-    display: block;
-    pointer-events: all;
-}
-
-.graphic-element {
-    position: absolute;
-    border: 2px dashed #3498db;
-    background-color: rgba(52, 152, 219, 0.1);
-    cursor: move;
-    resize: both;
-    overflow: auto;
-    min-width: 50px;
-    min-height: 50px;
-}
-
-.graphic-element.selected {
-    border: 2px solid #e74c3c;
-    background-color: rgba(231, 76, 60, 0.1);
-}
-
-.resize-handle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #3498db;
-    border: 1px solid white;
-}
-
-.resize-n { top: -5px; left: 50%; transform: translateX(-50%); cursor: n-resize; }
-.resize-s { bottom: -5px; left: 50%; transform: translateX(-50%); cursor: s-resize; }
-.resize-e { right: -5px; top: 50%; transform: translateY(-50%); cursor: e-resize; }
-.resize-w { left: -5px; top: 50%; transform: translateY(-50%); cursor: w-resize; }
-.resize-ne { top: -5px; right: -5px; cursor: ne-resize; }
-.resize-nw { top: -5px; left: -5px; cursor: nw-resize; }
-.resize-se { bottom: -5px; right: -5px; cursor: se-resize; }
-.resize-sw { bottom: -5px; left: -5px; cursor: sw-resize; }
-
-.rotate-handle {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    background: #9b59b6;
-    border-radius: 50%;
-    cursor: grab;
-}
-
-/* Цветовая палитра */
-.color-palette {
-    position: fixed;
-    top: 150px;
-    right: 30px;
-    width: 250px;
-    background: var(--bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    z-index: 1000;
-}
-
-.color-palette-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 15px;
-    background: var(--panel-bg);
-    border-bottom: 1px solid var(--border-color);
-    cursor: pointer;
-}
-
-.color-palette-header h4 {
-    margin: 0;
-    font-size: 14px;
-    color: var(--text-color);
-}
-
-.color-palette-toggle {
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    color: var(--text-color);
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.color-palette-content {
-    padding: 15px;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.color-palette.collapsed .color-palette-content {
-    display: none;
-}
-
-.color-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 5px;
-    margin-bottom: 15px;
-}
-
-.color-item {
-    width: 25px;
-    height: 25px;
-    border: 2px solid var(--border-color);
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.color-item:hover {
-    transform: scale(1.2);
-}
-
-.custom-color {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-    border: 2px solid var(--border-color);
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.color-input-group {
-    display: flex;
-    gap: 8px;
-}
-
-.color-input {
-    flex: 1;
-    padding: 8px;
-    border: 2px solid var(--border-color);
-    border-radius: 6px;
-    font-family: 'Courier New', monospace;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-#apply-color {
-    padding: 8px 12px;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-/* Загрузка файлов */
-.file-upload-section {
-    padding: 20px;
-    background-color: var(--panel-bg);
-    border-top: 2px solid var(--border-color);
-}
-
-.upload-title {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: var(--text-color);
-    font-weight: 600;
-    text-align: center;
-}
-
-.upload-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 15px;
-}
-
-.upload-btn {
-    padding: 12px 15px;
-    background-color: var(--bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--text-color);
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-.upload-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.file-upload-input {
-    display: none;
-}
-
-.uploaded-files {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.uploaded-file {
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-}
-
-.uploaded-file img {
-    max-width: 100%;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.file-name {
-    font-size: 12px;
-    margin-top: 5px;
-    word-break: break-all;
-    color: var(--text-color);
-}
-
-.delete-file {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: var(--danger-color);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-/* Контекстное меню */
-.context-menu {
-    position: fixed;
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    z-index: 10000;
-    display: none;
-    min-width: 150px;
-}
-
-.context-item {
-    padding: 10px 15px;
-    cursor: pointer;
-    border-bottom: 1px solid var(--border-color);
-    color: var(--text-color);
-    transition: background-color 0.2s ease;
-}
-
-.context-item:hover {
-    background-color: var(--panel-bg);
-}
-
-.context-item:last-child {
-    border-bottom: none;
+.block-added {
+    animation: blockPulse 0.5s ease;
 }
 
 .import-modal {
@@ -1223,27 +915,5 @@ footer {
     
     .import-buttons {
         grid-template-columns: 1fr;
-    }
-    
-    .color-palette {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: calc(100% - 40px);
-        margin: 10px 20px;
-    }
-    
-    .preview-controls {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-    
-    .upload-buttons {
-        grid-template-columns: 1fr;
-    }
-    
-    .uploaded-files {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }

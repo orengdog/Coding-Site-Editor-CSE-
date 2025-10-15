@@ -1,4 +1,4 @@
-// Переводы
+// Оптимизированные переводы
 const translations = {
     ru: {
         title: "Онлайн-редактор HTML/CSS/JS",
@@ -30,12 +30,13 @@ const translations = {
         saveJson: "Сохранить проект (JSON)",
         deploymentTitle: "🚀 Где выложить сайт?",
         aiHelpTitle: "🤖 У кого попросить помощь с кодом?",
-        footer: "Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО",
+        githubPages: "GitHub Pages",
+        footer: "Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation",
         htmlPlaceholder: "Введите ваш HTML код здесь...",
         cssPlaceholder: "Введите ваш CSS код здесь...",
         jsPlaceholder: "Введите ваш JavaScript код здесь...",
         resetConfirm: "Вы уверены, что хотите сбросить весь код?",
-        projectSaved: "Проект сохранен как 'web-project.json'"
+        projectSaved: "Проект сохранен!"
     },
     en: {
         title: "Online HTML/CSS/JS Editor",
@@ -67,12 +68,13 @@ const translations = {
         saveJson: "Save project (JSON)",
         deploymentTitle: "🚀 Where to deploy your site?",
         aiHelpTitle: "🤖 Who can help with code?",
-        footer: "Online HTML/CSS/JS Editor &copy; 2025 | ©orengdog corporation | Create web pages without installing additional software",
+        githubPages: "GitHub Pages",
+        footer: "Online HTML/CSS/JS Editor &copy; 2025 | ©orengdog corporation",
         htmlPlaceholder: "Enter your HTML code here...",
         cssPlaceholder: "Enter your CSS code here...",
         jsPlaceholder: "Enter your JavaScript code here...",
         resetConfirm: "Are you sure you want to reset all code?",
-        projectSaved: "Project saved as 'web-project.json'"
+        projectSaved: "Project saved!"
     },
     zh: {
         title: "在线 HTML/CSS/JS 编辑器",
@@ -104,16 +106,17 @@ const translations = {
         saveJson: "保存项目 (JSON)",
         deploymentTitle: "🚀 在哪里部署您的网站？",
         aiHelpTitle: "🤖 谁能帮助编写代码？",
-        footer: "在线 HTML/CSS/JS 编辑器 &copy; 2025 | ©orengdog corporation | 无需安装额外软件即可创建网页",
+        githubPages: "GitHub Pages",
+        footer: "在线 HTML/CSS/JS 编辑器 &copy; 2025 | ©orengdog corporation",
         htmlPlaceholder: "在此输入您的 HTML 代码...",
         cssPlaceholder: "在此输入您的 CSS 代码...",
         jsPlaceholder: "在此输入您的 JavaScript 代码...",
         resetConfirm: "您确定要重置所有代码吗？",
-        projectSaved: "项目已保存为 'web-project.json'"
+        projectSaved: "项目已保存！"
     }
 };
 
-// Примеры кода для разных языков
+// Примеры кода
 const codeExamples = {
     ru: {
         html: `<!DOCTYPE html>
@@ -234,90 +237,104 @@ button:hover {
     document.getElementById("demo").innerHTML = "Text changed with JavaScript!";
     document.getElementById("demo").style.backgroundColor = "#e74c3c";
 }`
+    },
+    zh: {
+        html: `<!DOCTYPE html>
+<html>
+<head>
+    <title>我的页面</title>
+</head>
+<body>
+    <h1>欢迎使用在线编辑器！</h1>
+    <p>修改此代码并点击"运行代码"查看结果。</p>
+    <div id="demo">这是演示文本</div>
+    <button onclick="changeText()">点击我！</button>
+</body>
+</html>`,
+        css: `body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    color: #34495e;
+}
+
+#demo {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #27ae60;
+}`,
+        js: `function changeText() {
+    document.getElementById("demo").innerHTML = "文本已通过 JavaScript 更改！";
+    document.getElementById("demo").style.backgroundColor = "#e74c3c";
+}`
     }
 };
 
-// Scratch блоки для HTML, CSS и JS
+// Scratch блоки
 const scratchBlocks = {
     html: {
         structure: [
             { title: "HTML5 Документ", code: '<!DOCTYPE html>\n<html>\n<head>\n    <title>Заголовок</title>\n</head>\n<body>\n    \n</body>\n</html>', category: "structure" },
             { title: "Контейнер Div", code: '<div class="container">\n    \n</div>', category: "structure" },
-            { title: "Секция", code: '<section>\n    \n</section>', category: "structure" },
-            { title: "Статья", code: '<article>\n    \n</article>', category: "structure" },
-            { title: "Боковая панель", code: '<aside>\n    \n</aside>', category: "structure" }
-        ],
-        text: [
-            { title: "Заголовок H1", code: '<h1>Заголовок</h1>', category: "text" },
-            { title: "Абзац", code: '<p>Текст абзаца</p>', category: "text" },
-            { title: "Ссылка", code: '<a href="#">Текст ссылки</a>', category: "text" },
-            { title: "Жирный текст", code: '<strong>Жирный текст</strong>', category: "text" },
-            { title: "Курсив", code: '<em>Курсивный текст</em>', category: "text" }
+            { title: "Заголовок H1", code: '<h1>Заголовок</h1>', category: "structure" },
+            { title: "Абзац", code: '<p>Текст абзаца</p>', category: "structure" }
         ],
         media: [
             { title: "Изображение", code: '<img src="image.jpg" alt="Описание">', category: "media" },
-            { title: "Видео", code: '<video controls>\n    <source src="video.mp4" type="video/mp4">\n</video>', category: "media" },
-            { title: "Аудио", code: '<audio controls>\n    <source src="audio.mp3" type="audio/mp3">\n</audio>', category: "media" }
-        ],
-        forms: [
-            { title: "Форма", code: '<form>\n    <input type="text" placeholder="Введите текст">\n    <button type="submit">Отправить</button>\n</form>', category: "forms" },
-            { title: "Текстовое поле", code: '<input type="text" placeholder="Введите текст">', category: "forms" },
-            { title: "Кнопка", code: '<button>Кнопка</button>', category: "forms" },
-            { title: "Выпадающий список", code: '<select>\n    <option>Опция 1</option>\n    <option>Опция 2</option>\n</select>', category: "forms" }
+            { title: "Кнопка", code: '<button>Кнопка</button>', category: "media" }
         ]
     },
     css: {
-        typography: [
-            { title: "Стили текста", code: 'font-family: Arial, sans-serif;\nfont-size: 16px;\nfont-weight: normal;\nline-height: 1.5;', category: "typography" },
-            { title: "Выравнивание текста", code: 'text-align: center;', category: "typography" },
-            { title: "Цвет текста", code: 'color: #333333;', category: "typography" }
+        layout: [
+            { title: "Flexbox", code: 'display: flex;\njustify-content: center;\nalign-items: center;', category: "layout" },
+            { title: "Отступы", code: 'padding: 20px;\nmargin: 10px;', category: "layout" }
         ],
         colors: [
             { title: "Фоновый цвет", code: 'background-color: #ffffff;', category: "colors" },
-            { title: "Градиент", code: 'background: linear-gradient(45deg, #ff6b6b, #4ecdc4);', category: "colors" },
-            { title: "Прозрачность", code: 'opacity: 0.8;', category: "colors" }
-        ],
-        layout: [
-            { title: "Flexbox", code: 'display: flex;\njustify-content: center;\nalign-items: center;', category: "layout" },
-            { title: "Grid", code: 'display: grid;\ngrid-template-columns: 1fr 1fr;\ngap: 20px;', category: "layout" },
-            { title: "Отступы", code: 'padding: 20px;\nmargin: 10px;', category: "layout" }
-        ],
-        effects: [
-            { title: "Тень", code: 'box-shadow: 0 4px 8px rgba(0,0,0,0.1);', category: "effects" },
-            { title: "Скругление углов", code: 'border-radius: 8px;', category: "effects" },
-            { title: "Граница", code: 'border: 1px solid #ddd;', category: "effects" }
+            { title: "Цвет текста", code: 'color: #333333;', category: "colors" }
         ]
     },
     js: {
-        variables: [
-            { title: "Объявление переменной", code: 'let variableName = "value";', category: "variables" },
-            { title: "Константа", code: 'const CONSTANT_NAME = "value";', category: "variables" },
-            { title: "Числовая переменная", code: 'let number = 42;', category: "variables" }
-        ],
         functions: [
-            { title: "Функция", code: 'function functionName(parameter) {\n    // код функции\n}', category: "functions" },
-            { title: "Стрелочная функция", code: 'const functionName = (parameter) => {\n    // код функции\n};', category: "functions" }
-        ],
-        events: [
-            { title: "Клик", code: 'element.addEventListener("click", function() {\n    // обработчик клика\n});', category: "events" },
-            { title: "Загрузка страницы", code: 'window.addEventListener("load", function() {\n    // код после загрузки\n});', category: "events" }
+            { title: "Функция", code: 'function functionName() {\n    // код функции\n}', category: "functions" },
+            { title: "Событие клика", code: 'element.addEventListener("click", function() {\n    // обработчик клика\n});', category: "functions" }
         ],
         dom: [
-            { title: "Выбор элемента", code: 'const element = document.querySelector(".className");', category: "dom" },
-            { title: "Изменение контента", code: 'element.innerHTML = "Новый контент";', category: "dom" },
-            { title: "Изменение стиля", code: 'element.style.color = "red";', category: "dom" }
+            { title: "Выбор элемента", code: 'const element = document.querySelector(".class");', category: "dom" },
+            { title: "Изменение контента", code: 'element.innerHTML = "Новый контент";', category: "dom" }
         ]
     }
 };
-
-// Цветовая палитра
-const colorPalette = [
-    '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF',
-    '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57', '#FF9FF3',
-    '#54A0FF', '#5F27CD', '#C8D6E5', '#FF9F43', '#10AC84', '#EE5A24',
-    '#FFFFFF', '#F5F5F5', '#E0E0E0', '#BDBDBD', '#9E9E9E', '#757575',
-    '#616161', '#424242', '#212121', '#000000'
-];
 
 document.addEventListener('DOMContentLoaded', function() {
     // Основные элементы
@@ -334,15 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const saveDropdown = document.getElementById('save-dropdown');
     const tabs = document.querySelectorAll('.tab');
     const codeContainers = document.querySelectorAll('.code-container');
-    
-    // Новые элементы
     const fullscreenBtn = document.getElementById('fullscreen-btn');
-    const colorPaletteElement = document.getElementById('color-palette');
-    const colorPaletteToggle = document.getElementById('color-palette-toggle');
-    const colorGrid = document.getElementById('color-grid');
-    const customColor = document.getElementById('custom-color');
-    const colorInput = document.getElementById('color-input');
-    const applyColorBtn = document.getElementById('apply-color');
 
     // Элементы сохранения
     const saveHtmlBtn = document.getElementById('save-html');
@@ -374,10 +383,22 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.lang = lang;
         currentLang.textContent = lang === 'ru' ? '🌐 RU' : lang === 'zh' ? '🌐 中文' : '🌐 EN';
         
+        // Обновляем все переводы
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang][key]) {
                 element.textContent = translations[lang][key];
+            }
+        });
+        
+        // Обновляем placeholder'ы
+        document.querySelectorAll('[placeholder]').forEach(element => {
+            const placeholder = element.getAttribute('placeholder');
+            const key = Object.keys(translations[lang]).find(k => 
+                translations[lang][k] === placeholder
+            );
+            if (key && translations[lang][key]) {
+                element.setAttribute('placeholder', translations[lang][key]);
             }
         });
         
@@ -439,87 +460,6 @@ document.addEventListener('DOMContentLoaded', function() {
         URL.revokeObjectURL(url);
     }
 
-    // Инициализация цветовой палитры
-    function initColorPalette() {
-        colorGrid.innerHTML = '';
-        colorPalette.forEach(color => {
-            const colorItem = document.createElement('div');
-            colorItem.className = 'color-item';
-            colorItem.style.backgroundColor = color;
-            colorItem.setAttribute('data-color', color);
-            colorItem.addEventListener('click', () => {
-                colorInput.value = color;
-                applyColorToSelection(color);
-            });
-            colorGrid.appendChild(colorItem);
-        });
-
-        customColor.addEventListener('input', (e) => {
-            colorInput.value = e.target.value;
-        });
-
-        applyColorBtn.addEventListener('click', () => {
-            applyColorToSelection(colorInput.value);
-        });
-
-        colorPaletteToggle.addEventListener('click', () => {
-            colorPaletteElement.classList.toggle('collapsed');
-            colorPaletteToggle.textContent = colorPaletteElement.classList.contains('collapsed') ? '+' : '−';
-        });
-
-        // Подсветка цветов в коде
-        highlightColorsInCode();
-    }
-
-    function highlightColorsInCode() {
-        const codeAreas = [htmlCode, cssCode, jsCode];
-        
-        codeAreas.forEach(textarea => {
-            textarea.addEventListener('click', (e) => {
-                const cursorPos = textarea.selectionStart;
-                const text = textarea.value;
-                
-                // Простой поиск цветов вокруг курсора
-                const searchRadius = 20;
-                const start = Math.max(0, cursorPos - searchRadius);
-                const end = Math.min(text.length, cursorPos + searchRadius);
-                const textAroundCursor = text.substring(start, end);
-                
-                const colorRegex = /#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/g;
-                let match;
-                
-                while ((match = colorRegex.exec(textAroundCursor)) !== null) {
-                    const color = match[0];
-                    const absolutePos = start + match.index;
-                    
-                    if (cursorPos >= absolutePos && cursorPos <= absolutePos + color.length) {
-                        colorInput.value = color;
-                        colorPaletteElement.style.display = 'block';
-                        break;
-                    }
-                }
-            });
-        });
-    }
-
-    function applyColorToSelection(color) {
-        const activeTextarea = document.querySelector('.code-container.active .code-area');
-        if (activeTextarea) {
-            const start = activeTextarea.selectionStart;
-            const end = activeTextarea.selectionEnd;
-            const selectedText = activeTextarea.value.substring(start, end);
-            
-            if (selectedText) {
-                const newText = activeTextarea.value.substring(0, start) + 
-                              color + 
-                              activeTextarea.value.substring(end);
-                activeTextarea.value = newText;
-                activeTextarea.focus();
-                runCode();
-            }
-        }
-    }
-
     // Полноэкранный режим
     function initFullscreen() {
         fullscreenBtn.addEventListener('click', toggleFullscreen);
@@ -544,12 +484,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const previewPanel = document.querySelector('.preview-panel');
         if (previewPanel.requestFullscreen) {
             previewPanel.requestFullscreen();
+        } else if (previewPanel.webkitRequestFullscreen) {
+            previewPanel.webkitRequestFullscreen();
+        } else if (previewPanel.msRequestFullscreen) {
+            previewPanel.msRequestFullscreen();
         }
     }
 
     function exitFullscreen() {
         if (document.exitFullscreen) {
             document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
         }
     }
 
@@ -724,9 +672,9 @@ document.addEventListener('DOMContentLoaded', function() {
         zip.file("script.js", jsCode.value);
         
         const readmeContent = {
-            ru: `# Мой веб-проект\n\nЭтот проект был создан в онлайн-редакторе HTML/CSS/JS.\n\n## Файлы:\n- index.html - основной HTML файл\n- styles.css - стили CSS\n- script.js - JavaScript код\n\nПросто откройте index.html в браузере чтобы увидеть результат.`,
-            en: `# My Web Project\n\nThis project was created in the online HTML/CSS/JS editor.\n\n## Files:\n- index.html - main HTML file\n- styles.css - CSS styles\n- script.js - JavaScript code\n\nJust open index.html in your browser to see the result.`,
-            zh: `# 我的网页项目\n\n此项目是在线 HTML/CSS/JS 编辑器中创建的。\n\n## 文件：\n- index.html - 主 HTML 文件\n- styles.css - CSS 样式\n- script.js - JavaScript 代码\n\n只需在浏览器中打开 index.html 即可查看结果。`
+            ru: `# Мой веб-проект\n\nЭтот проект был создан в онлайн-редакторе HTML/CSS/JS.`,
+            en: `# My Web Project\n\nThis project was created in the online HTML/CSS/JS editor.`,
+            zh: `# 我的网页项目\n\n此项目是在线 HTML/CSS/JS 编辑器中创建的。`
         };
         
         zip.file("README.md", readmeContent[lang]);
@@ -828,7 +776,6 @@ document.addEventListener('DOMContentLoaded', function() {
         runCode();
         
         // Инициализируем модули
-        initColorPalette();
         initFullscreen();
         initScratchBlocks();
         

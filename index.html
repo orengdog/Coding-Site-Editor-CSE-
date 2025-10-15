@@ -108,49 +108,31 @@
                 <iframe class="preview-area" id="preview"></iframe>
             </div>
         </div>
-
-        <!-- Цветовая палитра -->
-        <div class="color-palette" id="color-palette">
-            <div class="color-palette-header">
-                <h4>Палитра цветов</h4>
-                <button class="color-palette-toggle" id="color-palette-toggle">−</button>
-            </div>
-            <div class="color-palette-content">
-                <div class="color-grid" id="color-grid">
-                    <!-- Цвета будут добавлены через JavaScript -->
-                </div>
-                <input type="color" id="custom-color" class="custom-color">
-                <div class="color-input-group">
-                    <input type="text" id="color-input" placeholder="#FFFFFF" class="color-input">
-                    <button id="apply-color">Применить</button>
-                </div>
-            </div>
-        </div>
         
         <div class="controls">
             <div class="left-controls">
-                <button class="run-btn" id="run-button">Запустить код</button>
-                <button class="reset-btn" id="reset-button">Сбросить</button>
+                <button class="run-btn" id="run-button" data-i18n="runButton">Запустить код</button>
+                <button class="reset-btn" id="reset-button" data-i18n="resetButton">Сбросить</button>
             </div>
             <div class="right-controls">
                 <div class="save-dropdown" id="save-dropdown">
-                    <button class="save-btn">Сохранить проект ▼</button>
+                    <button class="save-btn" data-i18n="saveButton">Сохранить проект ▼</button>
                     <div class="save-dropdown-content">
-                        <button id="save-html">Сохранить как HTML</button>
-                        <button id="save-css">Сохранить как CSS</button>
-                        <button id="save-js">Сохранить как JS</button>
-                        <button id="save-htmlsb">Сохранить как HTMLSB</button>
-                        <button id="save-csssb">Сохранить как CSSSB</button>
-                        <button id="save-jssb">Сохранить как JSSB</button>
-                        <button id="save-all">Сохранить все файлы (ZIP)</button>
-                        <button id="save-json">Сохранить проект (JSON)</button>
+                        <button id="save-html" data-i18n="saveHtml">Сохранить как HTML</button>
+                        <button id="save-css" data-i18n="saveCss">Сохранить как CSS</button>
+                        <button id="save-js" data-i18n="saveJs">Сохранить как JS</button>
+                        <button id="save-htmlsb" data-i18n="saveHtmlSb">Сохранить как HTMLSB</button>
+                        <button id="save-csssb" data-i18n="saveCssSb">Сохранить как CSSSB</button>
+                        <button id="save-jssb" data-i18n="saveJsSb">Сохранить как JSSB</button>
+                        <button id="save-all" data-i18n="saveAll">Сохранить все файлы (ZIP)</button>
+                        <button id="save-json" data-i18n="saveJson">Сохранить проект (JSON)</button>
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="ai-help-section">
-            <h3 class="ai-help-title">🤖 У кого попросить помощь с кодом?</h3>
+            <h3 class="ai-help-title" data-i18n="aiHelpTitle">🤖 У кого попросить помощь с кодом?</h3>
             <div class="ai-help-buttons">
                 <a href="https://chat.deepseek.com" target="_blank" class="ai-help-btn deepseek">
                     <img src="https://git.drupalcode.org/project/deepseek/-/avatar" alt="DeepSeek" class="btn-icon">
@@ -168,11 +150,11 @@
         </div>
         
         <div class="deployment-section">
-            <h3 class="deployment-title">🚀 Где выложить сайт?</h3>
+            <h3 class="deployment-title" data-i18n="deploymentTitle">🚀 Где выложить сайт?</h3>
             <div class="deployment-buttons">
                 <a href="https://github.com" target="_blank" class="deploy-btn github">
                     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="btn-icon">
-                    <span class="btn-text">GitHub Pages</span>
+                    <span class="btn-text" data-i18n="githubPages">GitHub Pages</span>
                 </a>
                 <a href="https://netlify.com" target="_blank" class="deploy-btn netlify">
                     <img src="https://cdn.worldvectorlogo.com/logos/netlify.svg" alt="Netlify" class="btn-icon">
@@ -186,7 +168,7 @@
         </div>
         
         <footer>
-            <p>Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО</p>
+            <p data-i18n="footer">Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО</p>
         </footer>
     </div>
 

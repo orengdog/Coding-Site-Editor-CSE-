@@ -103,18 +103,9 @@
             <div class="preview-panel">
                 <div class="preview-header">
                     <div class="preview-title" data-i18n="previewTitle">Предпросмотр</div>
-                    <div class="preview-controls">
-                        <button class="fullscreen-btn" id="fullscreen-btn" title="Полноэкранный режим">⛶</button>
-                        <label class="graphic-mode-toggle">
-                            <input type="checkbox" id="graphic-mode">
-                            <span>Графический режим</span>
-                        </label>
-                    </div>
+                    <button class="fullscreen-btn" id="fullscreen-btn" title="Полноэкранный режим">⛶</button>
                 </div>
-                <div class="preview-wrapper">
-                    <iframe class="preview-area" id="preview"></iframe>
-                    <div class="graphic-overlay" id="graphic-overlay"></div>
-                </div>
+                <iframe class="preview-area" id="preview"></iframe>
             </div>
         </div>
 
@@ -135,32 +126,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Загрузка файлов -->
-        <div class="file-upload-section">
-            <h3 class="upload-title">Загрузка файлов</h3>
-            <div class="upload-buttons">
-                <button class="upload-btn" id="upload-image">Загрузить изображение</button>
-                <button class="upload-btn" id="upload-audio">Загрузить аудио</button>
-                <button class="upload-btn" id="upload-video">Загрузить видео</button>
-            </div>
-            <input type="file" id="file-upload" class="file-upload-input" accept=".png,.jpg,.jpeg,.gif,.mp3,.wav,.mp4,.avi" multiple>
-            <div class="uploaded-files" id="uploaded-files"></div>
-        </div>
-
-        <div class="import-section">
-            <h3 class="import-title">Импортировать файлы</h3>
-            <div class="import-buttons">
-                <button class="import-btn" id="import-html-file">Импорт HTML</button>
-                <button class="import-btn" id="import-css-file">Импорт CSS</button>
-                <button class="import-btn" id="import-js-file">Импорт JS</button>
-                <button class="import-btn" id="import-htmlsb-file">Импорт HTMLSB</button>
-                <button class="import-btn" id="import-csssb-file">Импорт CSSSB</button>
-                <button class="import-btn" id="import-jssb-file">Импорт JSSB</button>
-                <button class="import-btn" id="import-json-file">Импорт проекта (JSON)</button>
-            </div>
-            <input type="file" id="file-input" class="file-input" accept=".html,.css,.js,.htmlsb,.csssb,.jssb,.json">
-        </div>
         
         <div class="controls">
             <div class="left-controls">
@@ -179,8 +144,6 @@
                         <button id="save-jssb">Сохранить как JSSB</button>
                         <button id="save-all">Сохранить все файлы (ZIP)</button>
                         <button id="save-json">Сохранить проект (JSON)</button>
-                        <button id="share-project">Поделиться проектом</button>
-                        <button id="export-pdf">Экспорт в PDF</button>
                     </div>
                 </div>
             </div>
@@ -225,28 +188,6 @@
         <footer>
             <p>Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО</p>
         </footer>
-    </div>
-
-    <!-- Контекстное меню для графического режима -->
-    <div class="context-menu" id="context-menu">
-        <div class="context-item" data-action="rename">Переименовать</div>
-        <div class="context-item" data-action="recolor">Перекрасить</div>
-        <div class="context-item" data-action="duplicate">Дублировать</div>
-        <div class="context-item" data-action="copy">Копировать</div>
-        <div class="context-item" data-action="paste">Вставить</div>
-        <div class="context-item" data-action="delete">Удалить</div>
-    </div>
-
-    <!-- Модальное окно импорта -->
-    <div class="import-modal" id="import-modal">
-        <div class="import-modal-content">
-            <h3 class="modal-title">Импорт файла</h3>
-            <p>Выберите файл для импорта. Существующий код будет заменен.</p>
-            <div class="modal-buttons">
-                <button class="modal-btn primary" id="confirm-import">Подтвердить импорт</button>
-                <button class="modal-btn secondary" id="cancel-import">Отмена</button>
-            </div>
-        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>

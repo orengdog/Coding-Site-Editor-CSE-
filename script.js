@@ -8,7 +8,7 @@ const translations = {
         cssTab: "CSS",
         jsTab: "JavaScript",
         htmlScratchTab: "HTML Блоки",
-        cssScratchTab: "CSS Блоки",
+        cssScratchTab: "CSS Блоки", 
         jsScratchTab: "JS Блоки",
         htmlTitle: "HTML",
         cssTitle: "CSS",
@@ -28,14 +28,6 @@ const translations = {
         saveJsSb: "Сохранить как JSSB",
         saveAll: "Сохранить все файлы (ZIP)",
         saveJson: "Сохранить проект (JSON)",
-        importTitle: "Импортировать файлы",
-        importHtml: "Импорт HTML",
-        importCss: "Импорт CSS",
-        importJs: "Импорт JS",
-        importHtmlSb: "Импорт HTMLSB",
-        importCssSb: "Импорт CSSSB",
-        importJsSb: "Импорт JSSB",
-        importJson: "Импорт проекта (JSON)",
         deploymentTitle: "🚀 Где выложить сайт?",
         aiHelpTitle: "🤖 У кого попросить помощь с кодом?",
         footer: "Онлайн-редактор HTML/CSS/JS &copy; 2025 | ©orengdog corporation | Создавайте веб-страницы без установки дополнительного ПО",
@@ -43,28 +35,7 @@ const translations = {
         cssPlaceholder: "Введите ваш CSS код здесь...",
         jsPlaceholder: "Введите ваш JavaScript код здесь...",
         resetConfirm: "Вы уверены, что хотите сбросить весь код?",
-        projectSaved: "Проект сохранен как 'web-project.json'",
-        importModalTitle: "Импорт файла",
-        importModalText: "Выберите файл для импорта. Существующий код будет заменен.",
-        confirmImport: "Подтвердить импорт",
-        cancel: "Отмена",
-        structure: "Структура",
-        text: "Текст",
-        media: "Медиа",
-        forms: "Формы",
-        layout: "Макет",
-        navigation: "Навигация",
-        typography: "Типография",
-        colors: "Цвета",
-        layoutStyles: "Расположение",
-        effects: "Эффекты",
-        animations: "Анимации",
-        variables: "Переменные",
-        functions: "Функции",
-        events: "События",
-        dom: "DOM",
-        arrays: "Массивы",
-        objects: "Объекты"
+        projectSaved: "Проект сохранен как 'web-project.json'"
     },
     en: {
         title: "Online HTML/CSS/JS Editor",
@@ -75,7 +46,7 @@ const translations = {
         jsTab: "JavaScript",
         htmlScratchTab: "HTML Blocks",
         cssScratchTab: "CSS Blocks",
-        jsScratchTab: "JS Blocks",
+        jsScratchTab: "JS Blocks", 
         htmlTitle: "HTML",
         cssTitle: "CSS",
         jsTitle: "JavaScript",
@@ -94,14 +65,6 @@ const translations = {
         saveJsSb: "Save as JSSB",
         saveAll: "Save all files (ZIP)",
         saveJson: "Save project (JSON)",
-        importTitle: "Import Files",
-        importHtml: "Import HTML",
-        importCss: "Import CSS",
-        importJs: "Import JS",
-        importHtmlSb: "Import HTMLSB",
-        importCssSb: "Import CSSSB",
-        importJsSb: "Import JSSB",
-        importJson: "Import Project (JSON)",
         deploymentTitle: "🚀 Where to deploy your site?",
         aiHelpTitle: "🤖 Who can help with code?",
         footer: "Online HTML/CSS/JS Editor &copy; 2025 | ©orengdog corporation | Create web pages without installing additional software",
@@ -109,28 +72,7 @@ const translations = {
         cssPlaceholder: "Enter your CSS code here...",
         jsPlaceholder: "Enter your JavaScript code here...",
         resetConfirm: "Are you sure you want to reset all code?",
-        projectSaved: "Project saved as 'web-project.json'",
-        importModalTitle: "Import File",
-        importModalText: "Select file to import. Existing code will be replaced.",
-        confirmImport: "Confirm Import",
-        cancel: "Cancel",
-        structure: "Structure",
-        text: "Text",
-        media: "Media",
-        forms: "Forms",
-        layout: "Layout",
-        navigation: "Navigation",
-        typography: "Typography",
-        colors: "Colors",
-        layoutStyles: "Layout",
-        effects: "Effects",
-        animations: "Animations",
-        variables: "Variables",
-        functions: "Functions",
-        events: "Events",
-        dom: "DOM",
-        arrays: "Arrays",
-        objects: "Objects"
+        projectSaved: "Project saved as 'web-project.json'"
     },
     zh: {
         title: "在线 HTML/CSS/JS 编辑器",
@@ -146,7 +88,7 @@ const translations = {
         cssTitle: "CSS",
         jsTitle: "JavaScript",
         htmlScratchTitle: "HTML 块",
-        cssScratchTitle: "CSS 块",
+        cssScratchTitle: "CSS 块", 
         jsScratchTitle: "JS 块",
         previewTitle: "预览",
         runButton: "运行代码",
@@ -160,14 +102,6 @@ const translations = {
         saveJsSb: "保存为 JSSB",
         saveAll: "保存所有文件 (ZIP)",
         saveJson: "保存项目 (JSON)",
-        importTitle: "导入文件",
-        importHtml: "导入 HTML",
-        importCss: "导入 CSS",
-        importJs: "导入 JS",
-        importHtmlSb: "导入 HTMLSB",
-        importCssSb: "导入 CSSSB",
-        importJsSb: "导入 JSSB",
-        importJson: "导入项目 (JSON)",
         deploymentTitle: "🚀 在哪里部署您的网站？",
         aiHelpTitle: "🤖 谁能帮助编写代码？",
         footer: "在线 HTML/CSS/JS 编辑器 &copy; 2025 | ©orengdog corporation | 无需安装额外软件即可创建网页",
@@ -175,28 +109,7 @@ const translations = {
         cssPlaceholder: "在此输入您的 CSS 代码...",
         jsPlaceholder: "在此输入您的 JavaScript 代码...",
         resetConfirm: "您确定要重置所有代码吗？",
-        projectSaved: "项目已保存为 'web-project.json'",
-        importModalTitle: "导入文件",
-        importModalText: "选择要导入的文件。现有代码将被替换。",
-        confirmImport: "确认导入",
-        cancel: "取消",
-        structure: "结构",
-        text: "文本",
-        media: "媒体",
-        forms: "表单",
-        layout: "布局",
-        navigation: "导航",
-        typography: "排版",
-        colors: "颜色",
-        layoutStyles: "布局",
-        effects: "效果",
-        animations: "动画",
-        variables: "变量",
-        functions: "函数",
-        events: "事件",
-        dom: "DOM",
-        arrays: "数组",
-        objects: "对象"
+        projectSaved: "项目已保存为 'web-project.json'"
     }
 };
 
@@ -260,14 +173,6 @@ button:hover {
         js: `function changeText() {
     document.getElementById("demo").innerHTML = "Текст изменен с помощью JavaScript!";
     document.getElementById("demo").style.backgroundColor = "#e74c3c";
-    
-    // Создаем новый элемент
-    const newElement = document.createElement("p");
-    newElement.textContent = "Новый элемент добавлен динамически!";
-    newElement.style.color = "#27ae60";
-    newElement.style.fontWeight = "bold";
-    
-    document.body.appendChild(newElement);
 }`
     },
     en: {
@@ -328,82 +233,6 @@ button:hover {
         js: `function changeText() {
     document.getElementById("demo").innerHTML = "Text changed with JavaScript!";
     document.getElementById("demo").style.backgroundColor = "#e74c3c";
-    
-    // Create new element
-    const newElement = document.createElement("p");
-    newElement.textContent = "New element added dynamically!";
-    newElement.style.color = "#27ae60";
-    newElement.style.fontWeight = "bold";
-    
-    document.body.appendChild(newElement);
-}`
-    },
-    zh: {
-        html: `<!DOCTYPE html>
-<html>
-<head>
-    <title>我的页面</title>
-</head>
-<body>
-    <h1>欢迎使用在线编辑器！</h1>
-    <p>修改此代码并点击"运行代码"查看结果。</p>
-    <div id="demo">这是演示文本</div>
-    <button onclick="changeText()">点击我！</button>
-</body>
-</html>`,
-        css: `body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-
-h1 {
-    color: #2c3e50;
-    text-align: center;
-}
-
-p {
-    line-height: 1.6;
-    color: #34495e;
-}
-
-#demo {
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 15px 0;
-    text-align: center;
-}
-
-button {
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
-}
-
-button:hover {
-    background-color: #27ae60;
-}`,
-        js: `function changeText() {
-    document.getElementById("demo").innerHTML = "文本已通过 JavaScript 更改！";
-    document.getElementById("demo").style.backgroundColor = "#e74c3c";
-    
-    // 创建新元素
-    const newElement = document.createElement("p");
-    newElement.textContent = "新元素已动态添加！";
-    newElement.style.color = "#27ae60";
-    newElement.style.fontWeight = "bold";
-    
-    document.body.appendChild(newElement);
 }`
     }
 };
@@ -416,116 +245,79 @@ const scratchBlocks = {
             { title: "Контейнер Div", code: '<div class="container">\n    \n</div>', category: "structure" },
             { title: "Секция", code: '<section>\n    \n</section>', category: "structure" },
             { title: "Статья", code: '<article>\n    \n</article>', category: "structure" },
-            { title: "Боковая панель", code: '<aside>\n    \n</aside>', category: "structure" },
-            { title: "Шапка", code: '<header>\n    \n</header>', category: "structure" },
-            { title: "Подвал", code: '<footer>\n    \n</footer>', category: "structure" }
+            { title: "Боковая панель", code: '<aside>\n    \n</aside>', category: "structure" }
         ],
         text: [
             { title: "Заголовок H1", code: '<h1>Заголовок</h1>', category: "text" },
-            { title: "Заголовок H2", code: '<h2>Подзаголовок</h2>', category: "text" },
             { title: "Абзац", code: '<p>Текст абзаца</p>', category: "text" },
             { title: "Ссылка", code: '<a href="#">Текст ссылки</a>', category: "text" },
             { title: "Жирный текст", code: '<strong>Жирный текст</strong>', category: "text" },
-            { title: "Курсив", code: '<em>Курсивный текст</em>', category: "text" },
-            { title: "Список", code: '<ul>\n    <li>Элемент 1</li>\n    <li>Элемент 2</li>\n</ul>', category: "text" }
+            { title: "Курсив", code: '<em>Курсивный текст</em>', category: "text" }
         ],
         media: [
             { title: "Изображение", code: '<img src="image.jpg" alt="Описание">', category: "media" },
             { title: "Видео", code: '<video controls>\n    <source src="video.mp4" type="video/mp4">\n</video>', category: "media" },
-            { title: "Аудио", code: '<audio controls>\n    <source src="audio.mp3" type="audio/mp3">\n</audio>', category: "media" },
-            { title: "Ифрейм", code: '<iframe src="https://example.com"></iframe>', category: "media" }
+            { title: "Аудио", code: '<audio controls>\n    <source src="audio.mp3" type="audio/mp3">\n</audio>', category: "media" }
         ],
         forms: [
             { title: "Форма", code: '<form>\n    <input type="text" placeholder="Введите текст">\n    <button type="submit">Отправить</button>\n</form>', category: "forms" },
             { title: "Текстовое поле", code: '<input type="text" placeholder="Введите текст">', category: "forms" },
             { title: "Кнопка", code: '<button>Кнопка</button>', category: "forms" },
-            { title: "Выпадающий список", code: '<select>\n    <option>Опция 1</option>\n    <option>Опция 2</option>\n</select>', category: "forms" },
-            { title: "Чекбокс", code: '<input type="checkbox"> Чекбокс', category: "forms" },
-            { title: "Радио кнопка", code: '<input type="radio" name="group"> Опция', category: "forms" }
-        ],
-        layout: [
-            { title: "Сетка контейнер", code: '<div class="grid-container">\n    \n</div>', category: "layout" },
-            { title: "Флекс контейнер", code: '<div class="flex-container">\n    \n</div>', category: "layout" },
-            { title: "Навигация", code: '<nav>\n    <ul>\n        <li><a href="#">Ссылка 1</a></li>\n        <li><a href="#">Ссылка 2</a></li>\n    </ul>\n</nav>', category: "layout" },
-            { title: "Карточка", code: '<div class="card">\n    <h3>Заголовок карточки</h3>\n    <p>Содержимое карточки</p>\n</div>', category: "layout" }
+            { title: "Выпадающий список", code: '<select>\n    <option>Опция 1</option>\n    <option>Опция 2</option>\n</select>', category: "forms" }
         ]
     },
     css: {
         typography: [
             { title: "Стили текста", code: 'font-family: Arial, sans-serif;\nfont-size: 16px;\nfont-weight: normal;\nline-height: 1.5;', category: "typography" },
             { title: "Выравнивание текста", code: 'text-align: center;', category: "typography" },
-            { title: "Цвет текста", code: 'color: #333333;', category: "typography" },
-            { title: "Тень текста", code: 'text-shadow: 2px 2px 4px rgba(0,0,0,0.3);', category: "typography" },
-            { title: "Трансформация текста", code: 'text-transform: uppercase;', category: "typography" }
+            { title: "Цвет текста", code: 'color: #333333;', category: "typography" }
         ],
         colors: [
             { title: "Фоновый цвет", code: 'background-color: #ffffff;', category: "colors" },
             { title: "Градиент", code: 'background: linear-gradient(45deg, #ff6b6b, #4ecdc4);', category: "colors" },
-            { title: "Прозрачность", code: 'opacity: 0.8;', category: "colors" },
-            { title: "Цвет границы", code: 'border-color: #3498db;', category: "colors" }
+            { title: "Прозрачность", code: 'opacity: 0.8;', category: "colors" }
         ],
-        layoutStyles: [
-            { title: "Flexbox", code: 'display: flex;\njustify-content: center;\nalign-items: center;', category: "layoutStyles" },
-            { title: "Grid", code: 'display: grid;\ngrid-template-columns: 1fr 1fr;\ngap: 20px;', category: "layoutStyles" },
-            { title: "Отступы", code: 'padding: 20px;\nmargin: 10px;', category: "layoutStyles" },
-            { title: "Размеры", code: 'width: 100%;\nheight: 200px;', category: "layoutStyles" },
-            { title: "Позиционирование", code: 'position: relative;\ntop: 0;\nleft: 0;', category: "layoutStyles" }
+        layout: [
+            { title: "Flexbox", code: 'display: flex;\njustify-content: center;\nalign-items: center;', category: "layout" },
+            { title: "Grid", code: 'display: grid;\ngrid-template-columns: 1fr 1fr;\ngap: 20px;', category: "layout" },
+            { title: "Отступы", code: 'padding: 20px;\nmargin: 10px;', category: "layout" }
         ],
         effects: [
             { title: "Тень", code: 'box-shadow: 0 4px 8px rgba(0,0,0,0.1);', category: "effects" },
             { title: "Скругление углов", code: 'border-radius: 8px;', category: "effects" },
-            { title: "Граница", code: 'border: 1px solid #ddd;', category: "effects" },
-            { title: "Размытие", code: 'filter: blur(2px);', category: "effects" },
-            { title: "Яркость", code: 'filter: brightness(1.2);', category: "effects" }
-        ],
-        animations: [
-            { title: "Анимация", code: '@keyframes fadeIn {\n    from { opacity: 0; }\n    to { opacity: 1; }\n}\nanimation: fadeIn 1s ease-in-out;', category: "animations" },
-            { title: "Переход", code: 'transition: all 0.3s ease;', category: "animations" },
-            { title: "Трансформация", code: 'transform: scale(1.1) rotate(5deg);', category: "animations" },
-            { title: "Анимация наведения", code: 'transition: transform 0.3s ease;\n}\n.element:hover {\n    transform: scale(1.05);', category: "animations" }
+            { title: "Граница", code: 'border: 1px solid #ddd;', category: "effects" }
         ]
     },
     js: {
         variables: [
             { title: "Объявление переменной", code: 'let variableName = "value";', category: "variables" },
             { title: "Константа", code: 'const CONSTANT_NAME = "value";', category: "variables" },
-            { title: "Числовая переменная", code: 'let number = 42;', category: "variables" },
-            { title: "Булева переменная", code: 'let isActive = true;', category: "variables" },
-            { title: "Массив", code: 'let array = [1, 2, 3];', category: "variables" }
+            { title: "Числовая переменная", code: 'let number = 42;', category: "variables" }
         ],
         functions: [
             { title: "Функция", code: 'function functionName(parameter) {\n    // код функции\n}', category: "functions" },
-            { title: "Стрелочная функция", code: 'const functionName = (parameter) => {\n    // код функции\n};', category: "functions" },
-            { title: "Анонимная функция", code: 'function() {\n    // код функции\n}', category: "functions" },
-            { title: "Функция с возвратом", code: 'function sum(a, b) {\n    return a + b;\n}', category: "functions" }
+            { title: "Стрелочная функция", code: 'const functionName = (parameter) => {\n    // код функции\n};', category: "functions" }
         ],
         events: [
             { title: "Клик", code: 'element.addEventListener("click", function() {\n    // обработчик клика\n});', category: "events" },
-            { title: "Загрузка страницы", code: 'window.addEventListener("load", function() {\n    // код после загрузки\n});', category: "events" },
-            { title: "Ввод текста", code: 'inputElement.addEventListener("input", function(event) {\n    console.log(event.target.value);\n});', category: "events" },
-            { title: "Наведение мыши", code: 'element.addEventListener("mouseover", function() {\n    // код при наведении\n});', category: "events" }
+            { title: "Загрузка страницы", code: 'window.addEventListener("load", function() {\n    // код после загрузки\n});', category: "events" }
         ],
         dom: [
             { title: "Выбор элемента", code: 'const element = document.querySelector(".className");', category: "dom" },
             { title: "Изменение контента", code: 'element.innerHTML = "Новый контент";', category: "dom" },
-            { title: "Изменение стиля", code: 'element.style.color = "red";', category: "dom" },
-            { title: "Создание элемента", code: 'const newElement = document.createElement("div");\ndocument.body.appendChild(newElement);', category: "dom" },
-            { title: "Удаление элемента", code: 'element.remove();', category: "dom" }
-        ],
-        arrays: [
-            { title: "Создание массива", code: 'const array = [1, 2, 3, 4, 5];', category: "arrays" },
-            { title: "Перебор массива", code: 'array.forEach(item => {\n    console.log(item);\n});', category: "arrays" },
-            { title: "Фильтрация", code: 'const filtered = array.filter(item => item > 2);', category: "arrays" },
-            { title: "Поиск в массиве", code: 'const found = array.find(item => item === 3);', category: "arrays" }
-        ],
-        objects: [
-            { title: "Создание объекта", code: 'const obj = {\n    key: "value",\n    number: 42\n};', category: "objects" },
-            { title: "Доступ к свойствам", code: 'console.log(obj.key);', category: "objects" },
-            { title: "Метод объекта", code: 'const obj = {\n    method: function() {\n        // код метода\n    }\n};', category: "objects" },
-            { title: "Класс", code: 'class MyClass {\n    constructor() {\n        // конструктор\n    }\n}', category: "objects" }
+            { title: "Изменение стиля", code: 'element.style.color = "red";', category: "dom" }
         ]
     }
 };
+
+// Цветовая палитра
+const colorPalette = [
+    '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF',
+    '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57', '#FF9FF3',
+    '#54A0FF', '#5F27CD', '#C8D6E5', '#FF9F43', '#10AC84', '#EE5A24',
+    '#FFFFFF', '#F5F5F5', '#E0E0E0', '#BDBDBD', '#9E9E9E', '#757575',
+    '#616161', '#424242', '#212121', '#000000'
+];
 
 document.addEventListener('DOMContentLoaded', function() {
     // Основные элементы
@@ -543,26 +335,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
     const codeContainers = document.querySelectorAll('.code-container');
     
-    // Элементы Scratch блоков
-    const htmlBlocksContainer = document.getElementById('html-blocks');
-    const cssBlocksContainer = document.getElementById('css-blocks');
-    const jsBlocksContainer = document.getElementById('js-blocks');
-    const htmlCategoriesContainer = document.getElementById('html-categories');
-    const cssCategoriesContainer = document.getElementById('css-categories');
-    const jsCategoriesContainer = document.getElementById('js-categories');
-
-    // Элементы импорта
-    const importHtmlBtn = document.getElementById('import-html-file');
-    const importCssBtn = document.getElementById('import-css-file');
-    const importJsBtn = document.getElementById('import-js-file');
-    const importHtmlSbBtn = document.getElementById('import-htmlsb-file');
-    const importCssSbBtn = document.getElementById('import-csssb-file');
-    const importJsSbBtn = document.getElementById('import-jssb-file');
-    const importJsonBtn = document.getElementById('import-json-file');
-    const fileInput = document.getElementById('file-input');
-    const importModal = document.getElementById('import-modal');
-    const confirmImportBtn = document.getElementById('confirm-import');
-    const cancelImportBtn = document.getElementById('cancel-import');
+    // Новые элементы
+    const fullscreenBtn = document.getElementById('fullscreen-btn');
+    const colorPaletteElement = document.getElementById('color-palette');
+    const colorPaletteToggle = document.getElementById('color-palette-toggle');
+    const colorGrid = document.getElementById('color-grid');
+    const customColor = document.getElementById('custom-color');
+    const colorInput = document.getElementById('color-input');
+    const applyColorBtn = document.getElementById('apply-color');
 
     // Элементы сохранения
     const saveHtmlBtn = document.getElementById('save-html');
@@ -574,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const saveAllBtn = document.getElementById('save-all');
     const saveJsonBtn = document.getElementById('save-json');
 
-    let currentImportType = '';
+    // Переменные состояния
     let isLangDropdownOpen = false;
     let isSaveDropdownOpen = false;
 
@@ -601,13 +381,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-            const key = element.getAttribute('data-i18n-placeholder');
-            if (translations[lang][key]) {
-                element.setAttribute('placeholder', translations[lang][key]);
-            }
-        });
-        
         localStorage.setItem('editor-language', lang);
         
         if (!localStorage.getItem('editor-initialized')) {
@@ -616,9 +389,6 @@ document.addEventListener('DOMContentLoaded', function() {
             jsCode.value = codeExamples[lang].js;
             runCode();
         }
-
-        // Обновляем Scratch блоки
-        createScratchBlocks();
     }
     
     function setTheme(theme) {
@@ -668,38 +438,156 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     }
-    
-    // Функции для Scratch блоков
+
+    // Инициализация цветовой палитры
+    function initColorPalette() {
+        colorGrid.innerHTML = '';
+        colorPalette.forEach(color => {
+            const colorItem = document.createElement('div');
+            colorItem.className = 'color-item';
+            colorItem.style.backgroundColor = color;
+            colorItem.setAttribute('data-color', color);
+            colorItem.addEventListener('click', () => {
+                colorInput.value = color;
+                applyColorToSelection(color);
+            });
+            colorGrid.appendChild(colorItem);
+        });
+
+        customColor.addEventListener('input', (e) => {
+            colorInput.value = e.target.value;
+        });
+
+        applyColorBtn.addEventListener('click', () => {
+            applyColorToSelection(colorInput.value);
+        });
+
+        colorPaletteToggle.addEventListener('click', () => {
+            colorPaletteElement.classList.toggle('collapsed');
+            colorPaletteToggle.textContent = colorPaletteElement.classList.contains('collapsed') ? '+' : '−';
+        });
+
+        // Подсветка цветов в коде
+        highlightColorsInCode();
+    }
+
+    function highlightColorsInCode() {
+        const codeAreas = [htmlCode, cssCode, jsCode];
+        
+        codeAreas.forEach(textarea => {
+            textarea.addEventListener('click', (e) => {
+                const cursorPos = textarea.selectionStart;
+                const text = textarea.value;
+                
+                // Простой поиск цветов вокруг курсора
+                const searchRadius = 20;
+                const start = Math.max(0, cursorPos - searchRadius);
+                const end = Math.min(text.length, cursorPos + searchRadius);
+                const textAroundCursor = text.substring(start, end);
+                
+                const colorRegex = /#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/g;
+                let match;
+                
+                while ((match = colorRegex.exec(textAroundCursor)) !== null) {
+                    const color = match[0];
+                    const absolutePos = start + match.index;
+                    
+                    if (cursorPos >= absolutePos && cursorPos <= absolutePos + color.length) {
+                        colorInput.value = color;
+                        colorPaletteElement.style.display = 'block';
+                        break;
+                    }
+                }
+            });
+        });
+    }
+
+    function applyColorToSelection(color) {
+        const activeTextarea = document.querySelector('.code-container.active .code-area');
+        if (activeTextarea) {
+            const start = activeTextarea.selectionStart;
+            const end = activeTextarea.selectionEnd;
+            const selectedText = activeTextarea.value.substring(start, end);
+            
+            if (selectedText) {
+                const newText = activeTextarea.value.substring(0, start) + 
+                              color + 
+                              activeTextarea.value.substring(end);
+                activeTextarea.value = newText;
+                activeTextarea.focus();
+                runCode();
+            }
+        }
+    }
+
+    // Полноэкранный режим
+    function initFullscreen() {
+        fullscreenBtn.addEventListener('click', toggleFullscreen);
+        
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.fullscreenElement) {
+                exitFullscreen();
+            }
+        });
+    }
+
+    function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+            enterFullscreen();
+        } else {
+            exitFullscreen();
+        }
+    }
+
+    function enterFullscreen() {
+        const previewPanel = document.querySelector('.preview-panel');
+        if (previewPanel.requestFullscreen) {
+            previewPanel.requestFullscreen();
+        }
+    }
+
+    function exitFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+
+    function handleFullscreenChange() {
+        const isFullscreen = !!document.fullscreenElement;
+        fullscreenBtn.textContent = isFullscreen ? '⧉' : '⛶';
+        document.querySelector('.preview-panel').classList.toggle('preview-fullscreen', isFullscreen);
+    }
+
+    // Инициализация Scratch блоков
+    function initScratchBlocks() {
+        createScratchBlocks();
+        setupAutoTabSwitching();
+    }
+
     function createScratchBlocks() {
-        createBlocksForType('html', htmlBlocksContainer, htmlCategoriesContainer);
-        createBlocksForType('css', cssBlocksContainer, cssCategoriesContainer);
-        createBlocksForType('js', jsBlocksContainer, jsCategoriesContainer);
+        createBlocksForType('html', document.getElementById('html-blocks'), document.getElementById('html-categories'));
+        createBlocksForType('css', document.getElementById('css-blocks'), document.getElementById('css-categories'));
+        createBlocksForType('js', document.getElementById('js-blocks'), document.getElementById('js-categories'));
     }
 
     function createBlocksForType(type, blocksContainer, categoriesContainer) {
         const blocks = scratchBlocks[type];
         const lang = localStorage.getItem('editor-language') || 'ru';
         
-        // Очищаем контейнеры
-        categoriesContainer.innerHTML = '';
-        blocksContainer.innerHTML = '';
-        
-        // Создаем категории
         Object.keys(blocks).forEach(category => {
             const categoryBtn = document.createElement('div');
             categoryBtn.className = 'scratch-category';
-            categoryBtn.textContent = translations[lang][category] || category;
+            categoryBtn.textContent = category;
             categoryBtn.setAttribute('data-category', category);
             categoriesContainer.appendChild(categoryBtn);
         });
 
-        // Активируем первую категорию
         if (categoriesContainer.children.length > 0) {
             categoriesContainer.children[0].classList.add('active');
             showBlocksByCategory(type, Object.keys(blocks)[0], blocksContainer);
         }
 
-        // Обработчики для категорий
         categoriesContainer.addEventListener('click', (e) => {
             if (e.target.classList.contains('scratch-category')) {
                 Array.from(categoriesContainer.children).forEach(child => {
@@ -714,7 +602,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function showBlocksByCategory(type, category, container) {
         container.innerHTML = '';
         const blocks = scratchBlocks[type][category];
-        const lang = localStorage.getItem('editor-language') || 'ru';
         
         blocks.forEach(block => {
             const blockElement = document.createElement('div');
@@ -723,18 +610,9 @@ document.addEventListener('DOMContentLoaded', function() {
             blockElement.innerHTML = `
                 <div class="block-title">${block.title}</div>
                 <div class="block-code">${block.code}</div>
-                <div class="block-category">${translations[lang][block.category] || block.category}</div>
+                <div class="block-category">${block.category}</div>
             `;
             
-            // Drag and drop функциональность
-            blockElement.addEventListener('dragstart', (e) => {
-                e.dataTransfer.setData('text/plain', block.code);
-                e.dataTransfer.setData('block-type', type);
-            });
-            
-            blockElement.draggable = true;
-            
-            // Клик для быстрой вставки
             blockElement.addEventListener('click', () => {
                 insertBlockToEditor(type, block.code);
             });
@@ -763,15 +641,50 @@ document.addEventListener('DOMContentLoaded', function() {
         editor.focus();
         
         runCode();
+    }
+
+    function setupAutoTabSwitching() {
+        document.addEventListener('click', (e) => {
+            const scratchBlock = e.target.closest('.scratch-block');
+            if (scratchBlock) {
+                const blockContainer = scratchBlock.closest('.code-container');
+                if (blockContainer) {
+                    const tabType = blockContainer.id.replace('-scratch-container', '');
+                    switchToTab(tabType);
+                }
+            }
+        });
+    }
+
+    function switchToTab(tabType) {
+        tabs.forEach(tab => tab.classList.remove('active'));
+        codeContainers.forEach(container => container.classList.remove('active'));
         
-        const activeTab = document.querySelector('.tab.active');
-        if (activeTab.getAttribute('data-tab') === type) {
-            activeTab.classList.add('block-added');
-            setTimeout(() => activeTab.classList.remove('block-added'), 500);
+        const targetTab = document.querySelector(`[data-tab="${tabType}"]`);
+        const targetContainer = document.getElementById(`${tabType}-container`);
+        
+        if (targetTab && targetContainer) {
+            targetTab.classList.add('active');
+            targetContainer.classList.add('active');
         }
     }
 
-    // Функции для сохранения новых типов файлов
+    // Функции сохранения
+    function saveHtml() {
+        const htmlContent = htmlCode.value;
+        downloadFile(htmlContent, 'index.html', 'text/html');
+    }
+    
+    function saveCss() {
+        const cssContent = cssCode.value;
+        downloadFile(cssContent, 'styles.css', 'text/css');
+    }
+    
+    function saveJs() {
+        const jsContent = jsCode.value;
+        downloadFile(jsContent, 'script.js', 'text/javascript');
+    }
+    
     function saveHtmlSb() {
         const blocksData = {
             type: 'htmlsb',
@@ -800,151 +713,6 @@ document.addEventListener('DOMContentLoaded', function() {
             timestamp: new Date().toISOString()
         };
         downloadFile(JSON.stringify(blocksData, null, 2), 'js-blocks.jssb', 'application/json');
-    }
-
-    // Функции для импорта
-    function setupImportHandlers() {
-        importHtmlBtn.addEventListener('click', () => openFileInput('html'));
-        importCssBtn.addEventListener('click', () => openFileInput('css'));
-        importJsBtn.addEventListener('click', () => openFileInput('js'));
-        importHtmlSbBtn.addEventListener('click', () => openFileInput('htmlsb'));
-        importCssSbBtn.addEventListener('click', () => openFileInput('csssb'));
-        importJsSbBtn.addEventListener('click', () => openFileInput('jssb'));
-        importJsonBtn.addEventListener('click', () => openFileInput('json'));
-
-        fileInput.addEventListener('change', handleFileImport);
-        confirmImportBtn.addEventListener('click', confirmImport);
-        cancelImportBtn.addEventListener('click', cancelImport);
-    }
-
-    function openFileInput(type) {
-        currentImportType = type;
-        let accept = '';
-        switch(type) {
-            case 'html': accept = '.html'; break;
-            case 'css': accept = '.css'; break;
-            case 'js': accept = '.js'; break;
-            case 'htmlsb': accept = '.htmlsb'; break;
-            case 'csssb': accept = '.csssb'; break;
-            case 'jssb': accept = '.jssb'; break;
-            case 'json': accept = '.json'; break;
-        }
-        fileInput.accept = accept;
-        fileInput.click();
-    }
-
-    function handleFileImport(event) {
-        const file = event.target.files[0];
-        if (file) {
-            importModal.style.display = 'flex';
-        }
-    }
-
-    function confirmImport() {
-        const file = fileInput.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const content = e.target.result;
-                processImportedFile(content, currentImportType);
-                importModal.style.display = 'none';
-                fileInput.value = '';
-            };
-            reader.readAsText(file);
-        }
-    }
-
-    function cancelImport() {
-        importModal.style.display = 'none';
-        fileInput.value = '';
-    }
-
-    function processImportedFile(content, type) {
-        const lang = localStorage.getItem('editor-language') || 'ru';
-        
-        switch(type) {
-            case 'html':
-                htmlCode.value = content;
-                break;
-            case 'css':
-                cssCode.value = content;
-                break;
-            case 'js':
-                jsCode.value = content;
-                break;
-            case 'htmlsb':
-            case 'csssb':
-            case 'jssb':
-                try {
-                    const blocksData = JSON.parse(content);
-                    alert(`Блоки ${type} успешно импортированы!`);
-                } catch (e) {
-                    alert('Ошибка при импорте блоков: неверный формат файла');
-                }
-                break;
-            case 'json':
-                try {
-                    const project = JSON.parse(content);
-                    htmlCode.value = project.html || '';
-                    cssCode.value = project.css || '';
-                    jsCode.value = project.js || '';
-                } catch (e) {
-                    alert('Ошибка при импорте проекта: неверный формат JSON');
-                }
-                break;
-        }
-        runCode();
-    }
-
-    // Drag and drop для редакторов кода
-    function setupDragAndDrop() {
-        [htmlCode, cssCode, jsCode].forEach(editor => {
-            editor.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                editor.style.backgroundColor = 'var(--scratch-block-bg)';
-            });
-            
-            editor.addEventListener('dragleave', () => {
-                editor.style.backgroundColor = '';
-            });
-            
-            editor.addEventListener('drop', (e) => {
-                e.preventDefault();
-                editor.style.backgroundColor = '';
-                const code = e.dataTransfer.getData('text/plain');
-                const blockType = e.dataTransfer.getData('block-type');
-                
-                if (code) {
-                    const startPos = editor.selectionStart;
-                    const endPos = editor.selectionEnd;
-                    const currentValue = editor.value;
-                    
-                    editor.value = currentValue.substring(0, startPos) + 
-                                  code + 
-                                  currentValue.substring(endPos);
-                    
-                    editor.selectionStart = editor.selectionEnd = startPos + code.length;
-                    editor.focus();
-                    runCode();
-                }
-            });
-        });
-    }
-
-    // Существующие функции сохранения
-    function saveHtml() {
-        const htmlContent = htmlCode.value;
-        downloadFile(htmlContent, 'index.html', 'text/html');
-    }
-    
-    function saveCss() {
-        const cssContent = cssCode.value;
-        downloadFile(cssContent, 'styles.css', 'text/css');
-    }
-    
-    function saveJs() {
-        const jsContent = jsCode.value;
-        downloadFile(jsContent, 'script.js', 'text/javascript');
     }
     
     function saveAllFiles() {
@@ -1029,19 +797,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Инициализация
     function init() {
-        // Определяем язык
+        // Определяем язык и тему
         const savedLang = localStorage.getItem('editor-language');
         const systemLang = getSystemLanguage();
         const lang = savedLang || systemLang;
-        setLanguage(lang);
         
-        // Определяем тему
         const savedTheme = localStorage.getItem('editor-theme');
         const systemTheme = getSystemTheme();
         const theme = savedTheme || systemTheme;
+        
+        setLanguage(lang);
         setTheme(theme);
         
-        // Загружаем код если это не первый запуск
+        // Загружаем код
         if (localStorage.getItem('editor-initialized')) {
             const savedCode = localStorage.getItem('editor-code');
             if (savedCode) {
@@ -1059,78 +827,84 @@ document.addEventListener('DOMContentLoaded', function() {
         
         runCode();
         
-        // Создаем Scratch блоки
-        createScratchBlocks();
+        // Инициализируем модули
+        initColorPalette();
+        initFullscreen();
+        initScratchBlocks();
         
-        // Настраиваем импорт
-        setupImportHandlers();
-        
-        // Настраиваем drag and drop
-        setupDragAndDrop();
+        // Настраиваем обработчики событий
+        setupEventHandlers();
     }
 
-    // Обработчики событий
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const tabId = tab.getAttribute('data-tab');
-            
-            tabs.forEach(t => t.classList.remove('active'));
-            codeContainers.forEach(c => c.classList.remove('active'));
-            
-            tab.classList.add('active');
-            document.getElementById(`${tabId}-container`).classList.add('active');
+    function setupEventHandlers() {
+        // Основные кнопки
+        runButton.addEventListener('click', runCode);
+        resetButton.addEventListener('click', resetCode);
+        
+        // Переключение вкладок
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                tabs.forEach(t => t.classList.remove('active'));
+                codeContainers.forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(`${tabId}-container`).classList.add('active');
+            });
         });
-    });
-    
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-    });
-    
-    document.querySelectorAll('.lang-dropdown-content button').forEach(button => {
-        button.addEventListener('click', () => {
-            const lang = button.getAttribute('data-lang');
-            setLanguage(lang);
-            runCode();
-            toggleLangDropdown();
+        
+        // Переключение темы
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
         });
-    });
-    
-    document.querySelector('.lang-toggle').addEventListener('click', toggleLangDropdown);
-    document.querySelector('.save-btn').addEventListener('click', toggleSaveDropdown);
-    document.addEventListener('click', closeAllDropdowns);
-    
-    [htmlCode, cssCode, jsCode].forEach(textarea => {
-        textarea.addEventListener('input', () => {
-            const code = {
-                html: htmlCode.value,
-                css: cssCode.value,
-                js: jsCode.value
-            };
-            localStorage.setItem('editor-code', JSON.stringify(code));
+        
+        // Переключение языка
+        document.querySelectorAll('.lang-dropdown-content button').forEach(button => {
+            button.addEventListener('click', () => {
+                const lang = button.getAttribute('data-lang');
+                setLanguage(lang);
+                runCode();
+                toggleLangDropdown();
+            });
         });
-    });
-    
-    runButton.addEventListener('click', runCode);
-    resetButton.addEventListener('click', resetCode);
-    
-    // Обработчики сохранения
-    saveHtmlBtn.addEventListener('click', saveHtml);
-    saveCssBtn.addEventListener('click', saveCss);
-    saveJsBtn.addEventListener('click', saveJs);
-    saveHtmlSbBtn.addEventListener('click', saveHtmlSb);
-    saveCssSbBtn.addEventListener('click', saveCssSb);
-    saveJsSbBtn.addEventListener('click', saveJsSb);
-    saveAllBtn.addEventListener('click', saveAllFiles);
-    saveJsonBtn.addEventListener('click', saveProject);
-    
-    // Слушатель изменения системной темы
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!localStorage.getItem('editor-theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
-    
-    // Запускаем инициализацию
+        
+        // Управление выпадающими меню
+        document.querySelector('.lang-toggle').addEventListener('click', toggleLangDropdown);
+        document.querySelector('.save-btn').addEventListener('click', toggleSaveDropdown);
+        document.addEventListener('click', closeAllDropdowns);
+        
+        // Автосохранение кода
+        [htmlCode, cssCode, jsCode].forEach(textarea => {
+            textarea.addEventListener('input', () => {
+                const code = {
+                    html: htmlCode.value,
+                    css: cssCode.value,
+                    js: jsCode.value
+                };
+                localStorage.setItem('editor-code', JSON.stringify(code));
+            });
+        });
+        
+        // Сохранение файлов
+        saveHtmlBtn.addEventListener('click', saveHtml);
+        saveCssBtn.addEventListener('click', saveCss);
+        saveJsBtn.addEventListener('click', saveJs);
+        saveHtmlSbBtn.addEventListener('click', saveHtmlSb);
+        saveCssSbBtn.addEventListener('click', saveCssSb);
+        saveJsSbBtn.addEventListener('click', saveJsSb);
+        saveAllBtn.addEventListener('click', saveAllFiles);
+        saveJsonBtn.addEventListener('click', saveProject);
+        
+        // Слушатель изменения системной темы
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('editor-theme')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
+
+    // Запускаем приложение
     init();
 });
